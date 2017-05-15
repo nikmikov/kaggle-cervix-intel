@@ -1,0 +1,6658 @@
+[
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2402.469453376206,
+                "width": 2724.347266881029,
+                "x": 162.59807073954985,
+                "y": 1128.2315112540193
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/0.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 388.32154340836007,
+                "width": 955.0610932475886,
+                "x": 1007.5369774919614,
+                "y": 1018.032154340836
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/1.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1158.096463022508,
+                "width": 1234.4180064308682,
+                "x": 1025.363344051447,
+                "y": 1473.3376205787781
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/2.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 760.9003215434083,
+                "width": 771.395498392283,
+                "x": 931.4469453376206,
+                "y": 855.3569131832797
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/3.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 779.2668810289388,
+                "width": 692.6816720257235,
+                "x": 674.3151125401929,
+                "y": 813.3762057877814
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/4.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1121.5948553054664,
+                "width": 1214.508038585209,
+                "x": 822.9453376205788,
+                "y": 1264.282958199357
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/5.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 786.4437299035371,
+                "width": 769.8520900321544,
+                "x": 1055.2282958199357,
+                "y": 1181.3247588424438
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/6.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1071.8199356913183,
+                "width": 1201.234726688103,
+                "x": 716.7588424437299,
+                "y": 696.8488745980708
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/7.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 889.3118971061093,
+                "width": 889.3118971061094,
+                "x": 919.1768488745981,
+                "y": 657.0289389067524
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/8.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1858.2636655948552,
+                "width": 1841.6720257234729,
+                "x": -3.318327974276599,
+                "y": 1848.3086816720258
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/9.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1901.4019292604503,
+                "width": 1811.8070739549842,
+                "x": 185.82636655948545,
+                "y": 909.2218649517686
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/10.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 732.0385852090031,
+                "width": 684.8102893890675,
+                "x": 1041.646302250804,
+                "y": 587.7299035369775
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/11.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1010.1607717041802,
+                "width": 926.1993569131832,
+                "x": 448.66881028938906,
+                "y": 1322.3922829581993
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/12.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 514.2636655948554,
+                "width": 624.4630225080386,
+                "x": 1004.9131832797427,
+                "y": 1317.144694533762
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/13.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 774.0192926045015,
+                "width": 634.9581993569133,
+                "x": 750.4051446945338,
+                "y": 784.5144694533763
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/14.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1015.4083601286172,
+                "width": 1131.549839228296,
+                "x": 209.05466237942125,
+                "y": 1091.7299035369776
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/15.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 381.7620578778134,
+                "width": 409.3118971061092,
+                "x": 1275.1639871382638,
+                "y": 879.6270096463023
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/16.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2375.922829581994,
+                "width": 2435.652733118971,
+                "x": 451.29260450160774,
+                "y": 862.7652733118971
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/17.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 658.572347266881,
+                "width": 587.7299035369774,
+                "x": 1151.8456591639872,
+                "y": 1052.1414790996785
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/18.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 99.80707395498393,
+                "width": 123.98713826366557,
+                "x": 149.19614147909968,
+                "y": 239.22829581993568
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/19.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1778.6237942122186,
+                "width": 1762.0321543408359,
+                "x": 700.1672025723473,
+                "y": 1463.3826366559485
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/20.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1012.0900321543411,
+                "width": 1058.5466237942123,
+                "x": 982.2250803858522,
+                "y": 1715.5755627009646
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/21.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1148.1414790996787,
+                "width": 1108.3215434083602,
+                "x": 39.81993569131828,
+                "y": 773.1704180064309
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/22.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 477.5305466237942,
+                "width": 865.8520900321544,
+                "x": 758.2765273311898,
+                "y": 1490.315112540193
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/23.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 945.7234726688104,
+                "width": 982.225080385852,
+                "x": 680.2572347266881,
+                "y": 743.3054662379421
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/24.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1324.0128617363343,
+                "width": 1330.6495176848875,
+                "x": 975.5884244372991,
+                "y": 1241.0546623794212
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/25.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1771.9871382636659,
+                "width": 1712.2572347266882,
+                "x": 816.3086816720256,
+                "y": 1065.1832797427653
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/26.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 732.0385852090031,
+                "width": 884.218649517685,
+                "x": 973.427652733119,
+                "y": 834.3665594855305
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/27.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1466.7009646302251,
+                "width": 1660.8617363344051,
+                "x": 564.1157556270095,
+                "y": 947.1897106109325
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/28.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 850.1093247588424,
+                "width": 897.3376205787781,
+                "x": 448.66881028938906,
+                "y": 1101.9935691318328
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/29.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2070.636655948553,
+                "width": 2442.289389067524,
+                "x": 305.28617363344074,
+                "y": 673.620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/30.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1012.0900321543411,
+                "width": 952.3601286173632,
+                "x": 1068.501607717042,
+                "y": 1065.1832797427653
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/31.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 658.572347266881,
+                "width": 579.8585209003215,
+                "x": 1122.983922829582,
+                "y": 1133.4790996784566
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/32.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 485.40192926045006,
+                "width": 490.6495176848873,
+                "x": 1046.8938906752412,
+                "y": 999.6655948553055
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/33.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 511.6398713826368,
+                "width": 569.363344051447,
+                "x": 899.9614147909967,
+                "y": 1605.7620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/34.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1569.5691318327977,
+                "width": 1961.1318327974277,
+                "x": 975.5884244372991,
+                "y": 992.1800643086817
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/35.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1254.3279742765276,
+                "width": 1274.2379421221865,
+                "x": 1131.549839228296,
+                "y": 988.8617363344052
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/36.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1413.607717041801,
+                "width": 1838.3536977491965,
+                "x": 1211.1897106109325,
+                "y": 1655.8456591639872
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/37.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 571.9871382636655,
+                "width": 676.9389067524115,
+                "x": 878.9710610932476,
+                "y": 566.7395498392283
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/38.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 809.6720257234724,
+                "width": 597.2990353697751,
+                "x": 1241.0546623794212,
+                "y": 2521.929260450161
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/39.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 839.6141479099679,
+                "width": 816.0000000000001,
+                "x": 781.8906752411575,
+                "y": 687.4340836012861
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/40.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1244.372990353698,
+                "width": 1257.646302250804,
+                "x": 620.5273311897106,
+                "y": 1085.0932475884244
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/41.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1516.4758842443732,
+                "width": 1738.8038585209006,
+                "x": 570.7524115755627,
+                "y": 1061.8649517684887
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/42.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 935.7684887459808,
+                "width": 1032.0000000000002,
+                "x": 1168.0514469453376,
+                "y": 879.3569131832797
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/43.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 603.9356913183283,
+                "width": 590.662379421222,
+                "x": 965.6334405144695,
+                "y": 2628.1157556270095
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/44.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 876.0385852090035,
+                "width": 932.4501607717041,
+                "x": 899.266881028939,
+                "y": 1831.717041800643
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/45.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 537.877813504823,
+                "width": 661.1961414790998,
+                "x": 910.4565916398714,
+                "y": 1332.887459807074
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/46.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1755.3954983922831,
+                "width": 2399.151125401929,
+                "x": 388.2443729903539,
+                "y": 1811.807073954984
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/47.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 847.485530546624,
+                "width": 905.209003215434,
+                "x": 574.6109324758843,
+                "y": 1317.144694533762
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/48.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1183.331189710611,
+                "width": 1191.2025723472668,
+                "x": 506.3922829581993,
+                "y": 1117.7363344051446
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/49.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 647.0739549839228,
+                "width": 846.1736334405144,
+                "x": 945.7234726688104,
+                "y": 988.8617363344052
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/50.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2286.327974276527,
+                "width": 2969.9035369774924,
+                "x": 96.2315112540193,
+                "y": 786.443729903537
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/51.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 897.3376205787779,
+                "width": 1031.1511254019292,
+                "x": 669.0675241157558,
+                "y": 1805.170418006431
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/52.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 409.3118971061092,
+                "width": 430.30225080385844,
+                "x": 1542.790996784566,
+                "y": 1204.3215434083602
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/53.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 929.1318327974278,
+                "width": 1088.411575562701,
+                "x": 663.6655948553055,
+                "y": 394.88102893890675
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/54.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 362.0836012861737,
+                "width": 367.33118971061094,
+                "x": 1322.3922829581993,
+                "y": 1474.572347266881
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/55.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1002.1350482315115,
+                "width": 1088.411575562701,
+                "x": 876.0385852090033,
+                "y": 1622.6623794212219
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/56.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1422.096463022508,
+                "width": 1723.8327974276526,
+                "x": 383.0739549839228,
+                "y": 884.2186495176849
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/57.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 478.1864951768489,
+                "width": 598.2250803858522,
+                "x": 617.903536977492,
+                "y": 344.3729903536978
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/58.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 872.7202572347267,
+                "width": 1161.4147909967846,
+                "x": 1121.5948553054664,
+                "y": 1506.5209003215434
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/59.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 621.83922829582,
+                "width": 606.096463022508,
+                "x": 889.4662379421222,
+                "y": 1511.305466237942
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/60.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1287.511254019293,
+                "width": 1506.5209003215436,
+                "x": 846.1736334405145,
+                "y": 1655.8456591639872
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/61.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 527.3826366559485,
+                "width": 621.8392282958199,
+                "x": 802.8810289389068,
+                "y": 713.6720257234726
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/62.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1221.1446945337623,
+                "width": 1506.5209003215434,
+                "x": 285.3762057877814,
+                "y": 832.9003215434084
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/63.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 929.1318327974276,
+                "width": 1025.3633440514468,
+                "x": 1397.0160771704182,
+                "y": 587.3440514469454
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/64.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 842.2379421221865,
+                "width": 976.0514469453377,
+                "x": 519.5112540192926,
+                "y": 1243.6784565916398
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/65.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 939.3183279742764,
+                "width": 978.6752411575562,
+                "x": 997.0418006430868,
+                "y": 758.2765273311898
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/66.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 795.0096463022508,
+                "width": 1020.6559485530547,
+                "x": 448.66881028938906,
+                "y": 451.29260450160774
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/67.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1300.7845659163988,
+                "width": 1576.2057877813506,
+                "x": 1174.6881028938908,
+                "y": 1659.1639871382638
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/68.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 598.2250803858522,
+                "width": 857.9807073954984,
+                "x": 721.5434083601286,
+                "y": 1529.6720257234726
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/69.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 459.16398713826356,
+                "width": 600.8488745980707,
+                "x": 905.2090032154341,
+                "y": 1122.983922829582
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/70.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 839.3569131832796,
+                "width": 1033.3118971061092,
+                "x": 1029.967845659164,
+                "y": 2327.459807073955
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/71.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1324.0128617363343,
+                "width": 1251.0096463022508,
+                "x": 1174.6881028938908,
+                "y": 1377.106109324759
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/72.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 779.2668810289388,
+                "width": 868.475884244373,
+                "x": 816.0,
+                "y": 1666.1093247588424
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/73.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1082.315112540193,
+                "width": 739.9099678456594,
+                "x": 1255.4855305466237,
+                "y": 1147.2540192926047
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/74.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1241.0546623794212,
+                "width": 1748.75884244373,
+                "x": 530.9324758842445,
+                "y": 1732.1672025723474
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/75.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 537.877813504823,
+                "width": 705.8006430868168,
+                "x": 920.951768488746,
+                "y": 1277.7877813504824
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/76.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 464.4115755627008,
+                "width": 456.54019292604517,
+                "x": 1112.4887459807073,
+                "y": 1175.459807073955
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/77.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 503.7684887459807,
+                "width": 443.4212218649517,
+                "x": 928.823151125402,
+                "y": 1175.459807073955
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/78.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2020.8617363344054,
+                "width": 2160.2315112540196,
+                "x": 225.64630225080373,
+                "y": 899.266881028939
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/79.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1141.5048231511253,
+                "width": 1496.5659163987139,
+                "x": 474.5209003215434,
+                "y": 1619.3440514469455
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/80.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 643.4855305466239,
+                "width": 907.1768488745984,
+                "x": 2017.0418006430868,
+                "y": 885.5305466237943
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/81.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1440.1543408360126,
+                "width": 1496.565916398714,
+                "x": 730.0321543408361,
+                "y": 2054.0450160771707
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/82.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2200.051446945338,
+                "width": 2346.057877813505,
+                "x": 331.83279742765274,
+                "y": 504.3858520900322
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/83.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2316.192926045016,
+                "width": 2070.636655948553,
+                "x": 514.3408360128618,
+                "y": 262.1479099678457
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/84.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1884.8102893890677,
+                "width": 1871.5369774919616,
+                "x": 282.0578778135048,
+                "y": 318.5594855305466
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/85.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 821.2475884244373,
+                "width": 962.9324758842444,
+                "x": 745.1575562700965,
+                "y": 1306.6495176848875
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/86.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1070.508038585209,
+                "width": 1094.122186495177,
+                "x": 425.0546623794212,
+                "y": 789.7620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/87.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1931.266881028939,
+                "width": 2097.1832797427655,
+                "x": 610.572347266881,
+                "y": 915.8585209003215
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/88.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 939.3183279742764,
+                "width": 1010.16077170418,
+                "x": 941.9421221864952,
+                "y": 1115.112540192926
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/89.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 647.0739549839227,
+                "width": 696.8488745980708,
+                "x": 1098.3665594855306,
+                "y": 1144.823151125402
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/90.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1227.781350482315,
+                "width": 1184.6430868167204,
+                "x": 1008.7717041800643,
+                "y": 1380.4244372990354
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/91.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 537.8778135048233,
+                "width": 493.27331189710617,
+                "x": 1212.192926045016,
+                "y": 716.2958199356913
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/92.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 720.0771704180065,
+                "width": 829.581993569132,
+                "x": 1085.0932475884244,
+                "y": 1015.4083601286175
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/93.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1450.1093247588424,
+                "width": 1559.614147909968,
+                "x": 471.2025723472668,
+                "y": 1579.524115755627
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/94.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1259.4212218649518,
+                "width": 1311.8971061093248,
+                "x": 907.8327974276526,
+                "y": 472.2829581993569
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/95.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 836.2186495176848,
+                "width": 915.8585209003215,
+                "x": 1075.1382636655949,
+                "y": 1566.250803858521
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/96.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1204.32154340836,
+                "width": 1238.4308681672023,
+                "x": 834.3665594855306,
+                "y": 724.1672025723473
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/97.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 934.0707395498393,
+                "width": 955.0610932475884,
+                "x": 818.6237942122186,
+                "y": 1141.3504823151125
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/98.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 511.63987138263656,
+                "width": 648.0771704180064,
+                "x": 781.8906752411575,
+                "y": 1212.192926045016
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/99.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1377.1061093247588,
+                "width": 1486.6109324758843,
+                "x": 1257.646302250804,
+                "y": 1506.5209003215434
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/100.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 461.7877813504822,
+                "width": 503.7684887459807,
+                "x": 968.1800643086817,
+                "y": 1262.0450160771704
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/101.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 480.1543408360128,
+                "width": 516.887459807074,
+                "x": 1109.8649517684887,
+                "y": 978.6752411575562
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/102.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 338.4694533762058,
+                "width": 640.2057877813505,
+                "x": 981.299035369775,
+                "y": 1380.1157556270095
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/103.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 535.2540192926047,
+                "width": 632.3344051446945,
+                "x": 653.3247588424438,
+                "y": 1117.7363344051446
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/104.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 569.3633440514468,
+                "width": 732.0385852090033,
+                "x": 926.1993569131832,
+                "y": 1731.7041800643087
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/105.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 692.6816720257234,
+                "width": 844.8617363344051,
+                "x": 603.4726688102894,
+                "y": 1632.0
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/106.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 118.84244372990355,
+                "width": 123.4726688102894,
+                "x": 182.12218649517683,
+                "y": 157.94212218649517
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/107.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 564.1157556270095,
+                "width": 650.700964630225,
+                "x": 913.08038585209,
+                "y": 871.0996784565916
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/108.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 889.4662379421222,
+                "width": 910.4565916398714,
+                "x": 640.2057877813505,
+                "y": 1162.3408360128617
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/109.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 949.0418006430868,
+                "width": 1081.7749196141478,
+                "x": 1214.508038585209,
+                "y": 2170.186495176849
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/110.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1432.5916398713823,
+                "width": 1566.4051446945336,
+                "x": 388.3215434083602,
+                "y": 1332.887459807074
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/111.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1251.0096463022508,
+                "width": 978.9067524115757,
+                "x": 892.6302250803859,
+                "y": 1085.0932475884244
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/112.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1057.3890675241157,
+                "width": 1243.67845659164,
+                "x": 509.01607717041793,
+                "y": 918.3279742765274
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/113.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1639.2540192926047,
+                "width": 1762.0321543408363,
+                "x": 438.0192926045015,
+                "y": 1513.1575562700966
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/114.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 608.7202572347267,
+                "width": 695.305466237942,
+                "x": 1285.6591639871383,
+                "y": 1104.6173633440515
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/115.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 986.5466237942123,
+                "width": 1088.8745980707395,
+                "x": 753.0289389067525,
+                "y": 716.2958199356913
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/116.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1632.6173633440512,
+                "width": 1835.0353697749197,
+                "x": 869.4019292604503,
+                "y": 534.250803858521
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/117.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 760.9003215434084,
+                "width": 847.4855305466237,
+                "x": 1267.2926045016077,
+                "y": 1201.6977491961416
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/118.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 868.475884244373,
+                "width": 873.7234726688102,
+                "x": 577.2347266881029,
+                "y": 1157.0932475884244
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/119.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1121.5948553054664,
+                "width": 1191.279742765273,
+                "x": 912.5401929260452,
+                "y": 1397.0160771704182
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/120.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 490.64951768488754,
+                "width": 485.40192926045006,
+                "x": 1104.6173633440515,
+                "y": 1346.0064308681672
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/121.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 506.3922829581991,
+                "width": 524.7588424437299,
+                "x": 1083.6270096463022,
+                "y": 1571.6527331189711
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/122.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1649.2090032154342,
+                "width": 1728.848874598071,
+                "x": 431.38263665594855,
+                "y": 1811.807073954984
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/123.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 710.1221864951772,
+                "width": 657.0289389067525,
+                "x": 1204.5530546623795,
+                "y": 2080.5916398713825
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/124.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 796.3987138263667,
+                "width": 743.3054662379423,
+                "x": 992.1800643086817,
+                "y": 1596.1157556270098
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/125.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 949.0418006430868,
+                "width": 1154.7781350482317,
+                "x": 1254.3279742765274,
+                "y": 1114.9581993569132
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/126.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1032.0000000000002,
+                "width": 1114.9581993569132,
+                "x": 1158.096463022508,
+                "y": 1187.9614147909967
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/127.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1251.009646302251,
+                "width": 1470.0192926045015,
+                "x": 1244.3729903536978,
+                "y": 1582.8424437299036
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/128.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 726.7138263665593,
+                "width": 1114.9581993569134,
+                "x": 1274.2379421221865,
+                "y": 1333.9678456591641
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/129.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1290.9067524115753,
+                "width": 1314.5209003215434,
+                "x": 682.1864951768489,
+                "y": 616.5916398713827
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/130.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 375.2025723472668,
+                "width": 404.0643086816722,
+                "x": 1143.974276527331,
+                "y": 1555.9099678456591
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/131.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 630.4823151125402,
+                "width": 753.2604501607718,
+                "x": 590.6623794212219,
+                "y": 2057.3633440514473
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/132.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 648.0771704180065,
+                "width": 684.8102893890675,
+                "x": 655.9485530546624,
+                "y": 1416.8488745980708
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/133.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1095.048231511254,
+                "width": 1360.514469453376,
+                "x": 806.3536977491963,
+                "y": 1264.282958199357
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/134.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1957.813504823151,
+                "width": 2780.75884244373,
+                "x": 155.96141479099697,
+                "y": 866.0836012861737
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/135.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1005.4533762057881,
+                "width": 1121.5948553054664,
+                "x": 673.620578778135,
+                "y": 1197.9163987138263
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/136.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 503.76848874598056,
+                "width": 501.14469453376205,
+                "x": 1319.7684887459807,
+                "y": 771.395498392283
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/137.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1393.234726688103,
+                "width": 1382.7395498392282,
+                "x": 47.22829581993574,
+                "y": 781.8906752411575
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/138.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 965.5562700964629,
+                "width": 1054.765273311897,
+                "x": 684.8102893890675,
+                "y": 1283.0353697749197
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/139.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 789.7620578778136,
+                "width": 812.990353697749,
+                "x": 1479.9742765273313,
+                "y": 657.0289389067524
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/140.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 67.39549839228296,
+                "width": 68.93890675241157,
+                "x": 122.95819935691317,
+                "y": 110.61093247588424
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/141.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1894.7652733118973,
+                "width": 1854.9453376205788,
+                "x": 849.4919614147911,
+                "y": 706.8038585209003
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/142.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 557.4790996784566,
+                "width": 554.1607717041801,
+                "x": 457.92926045016077,
+                "y": 1841.6720257234726
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/143.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 895.9485530546624,
+                "width": 859.4469453376205,
+                "x": 1111.6398713826368,
+                "y": 1659.1639871382638
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/144.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 285.9935691318328,
+                "width": 238.7652733118971,
+                "x": 1209.5691318327974,
+                "y": 1534.91961414791
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/145.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1264.2829581993572,
+                "width": 1300.7845659163986,
+                "x": 1012.0900321543409,
+                "y": 1698.983922829582
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/146.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 607.2540192926047,
+                "width": 657.0289389067524,
+                "x": 942.4051446945338,
+                "y": 1801.8520900321544
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/147.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 679.5627009646303,
+                "width": 585.1061093247588,
+                "x": 973.427652733119,
+                "y": 1054.765273311897
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/148.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1015.4083601286172,
+                "width": 965.5562700964631,
+                "x": 1251.549839228296,
+                "y": 1238.4308681672026
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/149.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1164.7331189710608,
+                "width": 1071.8199356913183,
+                "x": 1051.9099678456591,
+                "y": 2097.1832797427655
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/150.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 566.7395498392282,
+                "width": 443.4212218649518,
+                "x": 1033.7749196141478,
+                "y": 842.2379421221865
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/151.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 945.7234726688105,
+                "width": 965.6334405144696,
+                "x": 451.2926045016077,
+                "y": 789.7620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/152.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 425.0546623794214,
+                "width": 501.14469453376205,
+                "x": 1366.9967845659164,
+                "y": 1634.6237942122186
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/153.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1694.8360128617364,
+                "width": 1776.9646302250806,
+                "x": 726.7138263665595,
+                "y": 940.7459807073955
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/154.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 749.942122186495,
+                "width": 859.4469453376205,
+                "x": 1390.379421221865,
+                "y": 2153.5948553054664
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/155.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 808.1286173633441,
+                "width": 894.7138263665594,
+                "x": 485.4019292604502,
+                "y": 1424.7202572347267
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/156.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 766.1479099678456,
+                "width": 742.5337620578778,
+                "x": 503.7684887459807,
+                "y": 1096.7459807073956
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/157.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 621.83922829582,
+                "width": 676.9389067524115,
+                "x": 380.4501607717042,
+                "y": 690.0578778135048
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/158.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1440.154340836013,
+                "width": 1556.2958199356913,
+                "x": 311.9228295819937,
+                "y": 1898.0836012861737
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/159.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2110.4565916398715,
+                "width": 2448.9260450160773,
+                "x": 1177.176848874598,
+                "y": 286.20578778135047
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/160.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 657.0289389067527,
+                "width": 720.0771704180065,
+                "x": 295.33118971061094,
+                "y": 1400.3344051446945
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/161.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 909.2218649517686,
+                "width": 1164.7331189710612,
+                "x": 577.3890675241157,
+                "y": 1904.720257234727
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/162.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 739.9099678456594,
+                "width": 716.2958199356913,
+                "x": 705.8006430868168,
+                "y": 1353.877813504823
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/163.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1237.736334405145,
+                "width": 1300.7845659163986,
+                "x": 607.2540192926047,
+                "y": 1134.8681672025723
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/164.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 968.9517684887462,
+                "width": 939.0868167202572,
+                "x": 587.3440514469454,
+                "y": 1088.411575562701
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/165.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 621.8392282958198,
+                "width": 608.7202572347268,
+                "x": 776.6430868167203,
+                "y": 1621.5048231511255
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/166.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 598.225080385852,
+                "width": 666.443729903537,
+                "x": 288.61736334405145,
+                "y": 721.5434083601286
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/167.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 829.1189710610931,
+                "width": 894.7138263665595,
+                "x": 1196.450160771704,
+                "y": 1634.6237942122186
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/168.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 975.588424437299,
+                "width": 995.4983922829583,
+                "x": 1164.7331189710612,
+                "y": 1947.8585209003215
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/169.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 797.6334405144694,
+                "width": 789.7620578778134,
+                "x": 695.3054662379421,
+                "y": 606.096463022508
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/170.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 333.22186495176857,
+                "width": 364.7073954983921,
+                "x": 1225.3118971061094,
+                "y": 569.3633440514469
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/171.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1410.289389067524,
+                "width": 1406.9710610932477,
+                "x": 1022.0450160771704,
+                "y": 1284.192926045016
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/172.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 532.6302250803858,
+                "width": 585.1061093247588,
+                "x": 897.3376205787781,
+                "y": 1107.24115755627
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/173.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 669.0675241157555,
+                "width": 739.9099678456591,
+                "x": 1041.646302250804,
+                "y": 1673.9807073954985
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/174.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 703.1768488745979,
+                "width": 684.8102893890675,
+                "x": 606.096463022508,
+                "y": 1311.8971061093248
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/175.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 939.3183279742765,
+                "width": 1002.2893890675242,
+                "x": 173.17041800643085,
+                "y": 881.5948553054662
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/176.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1486.6109324758843,
+                "width": 1854.9453376205788,
+                "x": 534.2508038585211,
+                "y": 245.55627009646304
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/177.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 338.4694533762058,
+                "width": 348.4244372990354,
+                "x": 1606.0707395498393,
+                "y": 2110.4565916398715
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/178.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1558.533762057878,
+                "width": 1799.9228295819937,
+                "x": 585.1061093247588,
+                "y": 897.3376205787781
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/179.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 813.3762057877814,
+                "width": 868.4758842443729,
+                "x": 802.8810289389068,
+                "y": 949.8135048231511
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/180.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 446.04501607717043,
+                "width": 467.0353697749197,
+                "x": 737.2861736334405,
+                "y": 1296.1543408360128
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/181.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 338.4694533762056,
+                "width": 404.06430868167206,
+                "x": 1020.6559485530546,
+                "y": 1437.83922829582
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/182.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 753.0289389067523,
+                "width": 1039.022508038585,
+                "x": 734.6623794212219,
+                "y": 603.4726688102894
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/183.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 839.5369774919614,
+                "width": 756.5787781350482,
+                "x": 783.1254019292605,
+                "y": 1304.1028938906752
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/184.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1616.025723472669,
+                "width": 1791.897106109325,
+                "x": 79.63987138263656,
+                "y": 474.5209003215434
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/185.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1191.279742765273,
+                "width": 1257.6463022508037,
+                "x": 447.9742765273313,
+                "y": 1078.4565916398715
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/186.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 682.1864951768488,
+                "width": 745.1575562700964,
+                "x": 818.6237942122186,
+                "y": 986.5466237942122
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/187.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 560.8360128617364,
+                "width": 446.7009646302249,
+                "x": 2532.6173633440517,
+                "y": 1009.5048231511255
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/188.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 556.2443729903537,
+                "width": 558.8681672025724,
+                "x": 747.7813504823151,
+                "y": 1172.8360128617364
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/189.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 633.8006430868168,
+                "width": 700.1672025723474,
+                "x": 182.50803858520896,
+                "y": 1476.6559485530547
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/190.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 325.3504823151125,
+                "width": 398.8167202572348,
+                "x": 965.556270096463,
+                "y": 270.2508038585209
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/191.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1340.6045016077173,
+                "width": 1957.813504823151,
+                "x": 252.19292604501607,
+                "y": 1705.620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/192.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1631.8971061093248,
+                "width": 1718.8424437299036,
+                "x": 628.6816720257234,
+                "y": 1217.234726688103
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/193.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 687.4340836012861,
+                "width": 703.1768488745981,
+                "x": 760.9003215434084,
+                "y": 1317.144694533762
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/194.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1353.8778135048233,
+                "width": 1473.3376205787783,
+                "x": 603.935691318328,
+                "y": 1178.0064308681672
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/195.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1508.1800643086817,
+                "width": 1943.7106109324761,
+                "x": 1127.40192926045,
+                "y": 771.5112540192926
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/196.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 821.247588424437,
+                "width": 915.7041800643086,
+                "x": 939.3183279742765,
+                "y": 1781.556270096463
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/197.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 262.37942122186496,
+                "width": 312.2315112540193,
+                "x": 787.1382636655949,
+                "y": 999.6655948553055
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/198.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 493.27331189710594,
+                "width": 501.14469453376216,
+                "x": 829.1189710610932,
+                "y": 1330.2636655948554
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/199.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2077.273311897106,
+                "width": 2226.59807073955,
+                "x": 328.514469453376,
+                "y": 1672.43729903537
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/200.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 598.2250803858519,
+                "width": 624.4630225080386,
+                "x": 377.82636655948545,
+                "y": 1330.2636655948554
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/201.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 367.33118971061094,
+                "width": 398.8167202572347,
+                "x": 1498.186495176849,
+                "y": 1639.8713826366559
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/202.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 625.7749196141481,
+                "width": 550.9967845659166,
+                "x": 1672.668810289389,
+                "y": 854.0450160771704
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/203.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 540.5016077170417,
+                "width": 514.2636655948554,
+                "x": 926.1993569131832,
+                "y": 1280.411575562701
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/204.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 902.5852090032156,
+                "width": 939.0868167202573,
+                "x": 1214.508038585209,
+                "y": 1280.8745980707397
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/205.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1755.3954983922831,
+                "width": 1748.75884244373,
+                "x": 617.2090032154341,
+                "y": 866.0836012861737
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/206.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 493.27331189710617,
+                "width": 532.6302250803858,
+                "x": 1054.765273311897,
+                "y": 1028.5273311897106
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/207.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 346.3408360128617,
+                "width": 383.0739549839227,
+                "x": 1096.7459807073956,
+                "y": 1054.765273311897
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/208.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 968.1800643086816,
+                "width": 1154.469453376206,
+                "x": 1033.7749196141478,
+                "y": 876.347266881029
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/209.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 393.56913183279744,
+                "width": 446.04501607717043,
+                "x": 571.9871382636655,
+                "y": 1356.5016077170417
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/210.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 756.5787781350484,
+                "width": 919.1768488745982,
+                "x": 753.2604501607717,
+                "y": 1698.983922829582
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/211.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1061.8649517684887,
+                "width": 1187.9614147909967,
+                "x": 212.3729903536978,
+                "y": 1702.3022508038587
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/212.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1237.7363344051448,
+                "width": 1898.0836012861737,
+                "x": 66.36655948553062,
+                "y": 962.315112540193
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/213.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1113.5691318327974,
+                "width": 1029.967845659164,
+                "x": 621.9935691318328,
+                "y": 1795.7556270096463
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/214.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 554.16077170418,
+                "width": 554.1607717041802,
+                "x": 1430.1993569131832,
+                "y": 1715.5755627009646
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/215.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 819.6270096463024,
+                "width": 975.5884244372991,
+                "x": 882.6752411575563,
+                "y": 1722.2122186495178
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/216.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1519.7942122186496,
+                "width": 2110.4565916398715,
+                "x": 610.572347266881,
+                "y": 564.1157556270097
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/217.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 856.1286173633441,
+                "width": 1095.048231511254,
+                "x": 1121.5948553054664,
+                "y": 1994.315112540193
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/218.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 747.7813504823151,
+                "width": 834.3665594855304,
+                "x": 1296.1543408360128,
+                "y": 590.3536977491962
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/219.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 763.2154340836014,
+                "width": 829.581993569132,
+                "x": 1241.0546623794212,
+                "y": 2319.5112540192927
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/220.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 230.89389067524098,
+                "width": 194.1607717041802,
+                "x": 1060.0128617363343,
+                "y": 1876.0128617363343
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/221.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 634.9581993569132,
+                "width": 522.1350482315111,
+                "x": 1330.2636655948554,
+                "y": 1304.025723472669
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/222.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 474.90675241157555,
+                "width": 480.1543408360128,
+                "x": 973.427652733119,
+                "y": 1752.694533762058
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/223.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 377.82636655948556,
+                "width": 346.3408360128617,
+                "x": 899.9614147909967,
+                "y": 516.8874598070739
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/224.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1131.549839228296,
+                "width": 1168.0514469453378,
+                "x": 1221.144694533762,
+                "y": 1698.983922829582
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/225.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 577.2347266881027,
+                "width": 577.2347266881028,
+                "x": 587.7299035369775,
+                "y": 1710.7138263665595
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/226.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 487.7942122186496,
+                "width": 520.9774919614149,
+                "x": 1327.331189710611,
+                "y": 2531.8842443729905
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/227.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1154.7781350482314,
+                "width": 1728.848874598071,
+                "x": 560.7974276527332,
+                "y": 1035.3183279742766
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/228.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1353.877813504823,
+                "width": 1698.9839228295818,
+                "x": 1038.6366559485532,
+                "y": 1908.0385852090033
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/229.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 566.7395498392283,
+                "width": 467.03536977491956,
+                "x": 621.8392282958199,
+                "y": 986.5466237942122
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/230.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 787.1382636655949,
+                "width": 829.1189710610931,
+                "x": 763.524115755627,
+                "y": 1023.2797427652733
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/231.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 766.1479099678456,
+                "width": 844.8617363344051,
+                "x": 768.7717041800643,
+                "y": 653.3247588424438
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/232.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1264.282958199357,
+                "width": 1400.3344051446945,
+                "x": 1489.9292604501609,
+                "y": 700.1672025723473
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/233.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 816.3086816720256,
+                "width": 1297.4662379421225,
+                "x": 1304.1028938906752,
+                "y": 1048.5916398713828
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/234.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 892.630225080386,
+                "width": 952.3601286173632,
+                "x": 1091.7299035369776,
+                "y": 1367.1511254019292
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/235.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 544.2057877813504,
+                "width": 809.6720257234726,
+                "x": 1171.3697749196142,
+                "y": 2657.9807073954985
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/236.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 385.69774919614156,
+                "width": 430.30225080385856,
+                "x": 669.0675241157556,
+                "y": 1778.9324758842445
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/237.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 537.8778135048233,
+                "width": 669.0675241157555,
+                "x": 1094.122186495177,
+                "y": 1382.7395498392282
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/238.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1393.6977491961418,
+                "width": 1446.790996784566,
+                "x": 895.9485530546624,
+                "y": 1655.8456591639872
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/239.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 488.0257234726689,
+                "width": 514.2636655948554,
+                "x": 871.0996784565916,
+                "y": 1136.1028938906752
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/240.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 610.572347266881,
+                "width": 849.4919614147911,
+                "x": 1685.710610932476,
+                "y": 1708.9389067524116
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/241.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1718.8938906752414,
+                "width": 1977.7234726688105,
+                "x": 474.5209003215434,
+                "y": 673.620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/242.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1378.765273311897,
+                "width": 1336.4565916398715,
+                "x": 1396.186495176849,
+                "y": 888.4823151125402
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/243.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 535.2540192926047,
+                "width": 632.3344051446946,
+                "x": 671.6913183279743,
+                "y": 1296.1543408360128
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/244.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 809.6720257234729,
+                "width": 1101.6848874598072,
+                "x": 700.1672025723472,
+                "y": 1264.282958199357
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/245.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1685.710610932476,
+                "width": 1874.855305466238,
+                "x": 169.2347266881029,
+                "y": 657.0289389067524
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/246.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 283.3697749196142,
+                "width": 362.0836012861737,
+                "x": 897.3376205787781,
+                "y": 1574.2765273311898
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/247.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1446.7909967845658,
+                "width": 1516.4758842443732,
+                "x": 1187.9614147909967,
+                "y": 1121.5948553054664
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/248.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 684.8102893890675,
+                "width": 781.8906752411575,
+                "x": 726.7909967845659,
+                "y": 1241.0546623794212
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/249.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1314.057877813505,
+                "width": 1420.244372990354,
+                "x": 564.1157556270097,
+                "y": 716.7588424437299
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/250.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 686.8938906752414,
+                "width": 713.4405144694533,
+                "x": 1118.2765273311898,
+                "y": 1390.379421221865
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/251.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1403.652733118971,
+                "width": 1622.6623794212219,
+                "x": 1221.144694533762,
+                "y": 1038.6366559485532
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/252.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 388.3215434083602,
+                "width": 443.4212218649518,
+                "x": 1007.5369774919614,
+                "y": 1527.048231511254
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/253.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1718.8938906752412,
+                "width": 1639.2540192926044,
+                "x": 806.3536977491962,
+                "y": 1470.0192926045017
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/254.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 834.3665594855305,
+                "width": 892.0900321543409,
+                "x": 763.524115755627,
+                "y": 876.347266881029
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/255.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 495.897106109325,
+                "width": 514.2636655948554,
+                "x": 1004.9131832797427,
+                "y": 1692.3472668810289
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/256.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 759.8971061093248,
+                "width": 945.7234726688105,
+                "x": 1085.0932475884244,
+                "y": 1274.2379421221865
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/257.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 619.2154340836012,
+                "width": 669.0675241157558,
+                "x": 637.5819935691318,
+                "y": 1094.122186495177
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/258.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 989.1704180064309,
+                "width": 1086.2508038585208,
+                "x": 401.4405144694534,
+                "y": 1015.4083601286173
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/259.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1028.6816720257234,
+                "width": 1085.0932475884244,
+                "x": 1191.2797427652733,
+                "y": 1944.5401929260452
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/260.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1543.0225080385853,
+                "width": 1864.9003215434086,
+                "x": 584.0257234726688,
+                "y": 803.0353697749197
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/261.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 695.305466237942,
+                "width": 608.7202572347267,
+                "x": 1322.3922829581993,
+                "y": 1130.855305466238
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/262.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1745.4405144694533,
+                "width": 1990.9967845659164,
+                "x": 345.10610932475885,
+                "y": 1118.2765273311898
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/263.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 406.6881028938908,
+                "width": 401.4405144694533,
+                "x": 1214.8167202572347,
+                "y": 1351.2540192926044
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/264.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1776.3086816720256,
+                "width": 1710.7138263665595,
+                "x": 146.93247588424447,
+                "y": 968.1800643086817
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/265.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 915.7041800643087,
+                "width": 792.3858520900324,
+                "x": 1301.40192926045,
+                "y": 923.5755627009646
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/266.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1178.0064308681672,
+                "width": 1231.0996784565918,
+                "x": 703.4855305466237,
+                "y": 1921.3118971061094
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/267.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 849.4919614147911,
+                "width": 929.1318327974278,
+                "x": 627.1639871382637,
+                "y": 862.7652733118971
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/268.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1217.8263665594855,
+                "width": 1406.9710610932475,
+                "x": 905.903536977492,
+                "y": 1264.282958199357
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/269.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 522.1350482315114,
+                "width": 472.2829581993569,
+                "x": 1075.7556270096463,
+                "y": 703.176848874598
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/270.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 702.2508038585208,
+                "width": 805.9163987138263,
+                "x": 1029.967845659164,
+                "y": 1240.6430868167201
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/271.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 800.257234726688,
+                "width": 905.2090032154342,
+                "x": 873.7234726688102,
+                "y": 1802.546623794212
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/272.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 899.2668810289388,
+                "width": 965.6334405144696,
+                "x": 1151.459807073955,
+                "y": 2156.913183279743
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/273.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 650.3922829581993,
+                "width": 690.2122186495176,
+                "x": 1436.8360128617364,
+                "y": 2638.0707395498393
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/274.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 427.6784565916398,
+                "width": 600.8488745980708,
+                "x": 918.3279742765274,
+                "y": 1338.1350482315113
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/275.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 485.4019292604502,
+                "width": 432.92604501607707,
+                "x": 920.951768488746,
+                "y": 1012.7845659163987
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/276.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1809.3183279742766,
+                "width": 1575.3762057877814,
+                "x": 783.9549839228296,
+                "y": 674.4501607717042
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/277.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 842.8553054662382,
+                "width": 696.8488745980708,
+                "x": 1051.9099678456591,
+                "y": 1868.218649517685
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/278.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1357.1961414790999,
+                "width": 1506.5209003215436,
+                "x": 345.1061093247588,
+                "y": 1310.7395498392284
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/279.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1715.5755627009648,
+                "width": 2863.717041800643,
+                "x": 102.8681672025723,
+                "y": 736.6688102893891
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/280.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 876.0385852090035,
+                "width": 1091.7299035369774,
+                "x": 676.9389067524116,
+                "y": 1917.9935691318328
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/281.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 417.1832797427653,
+                "width": 459.1639871382637,
+                "x": 616.5916398713827,
+                "y": 1639.8713826366559
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/282.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1340.604501607717,
+                "width": 2402.469453376206,
+                "x": 92.91318327974295,
+                "y": 1403.6527331189711
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/283.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1127.4019292604503,
+                "width": 1276.726688102894,
+                "x": 1338.9453376205788,
+                "y": 803.8649517684887
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/284.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 995.4983922829583,
+                "width": 1144.823151125402,
+                "x": 650.3922829581994,
+                "y": 1241.0546623794212
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/285.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1513.1575562700966,
+                "width": 1645.8906752411576,
+                "x": 723.3954983922831,
+                "y": 1340.604501607717
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/286.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 301.7363344051447,
+                "width": 385.69774919614156,
+                "x": 1419.4726688102894,
+                "y": 634.9581993569132
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/287.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 372.5787781350483,
+                "width": 495.8971061093248,
+                "x": 1083.6270096463022,
+                "y": 750.4051446945338
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/288.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 530.9324758842442,
+                "width": 653.710610932476,
+                "x": 902.5852090032155,
+                "y": 1479.9742765273313
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/289.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 627.1639871382636,
+                "width": 683.5755627009646,
+                "x": 972.2700964630226,
+                "y": 1818.4437299035371
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/290.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1320.6945337620577,
+                "width": 1436.8360128617364,
+                "x": 690.2122186495176,
+                "y": 1058.5466237942123
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/291.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 568.4887459807073,
+                "width": 825.9807073954985,
+                "x": 1153.6977491961413,
+                "y": 1842.572347266881
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/292.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1187.9614147909967,
+                "width": 1476.6559485530547,
+                "x": 315.2411575562701,
+                "y": 1977.7234726688105
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/293.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 459.1639871382638,
+                "width": 653.3247588424437,
+                "x": 955.0610932475885,
+                "y": 1327.6398713826366
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/294.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1602.7524115755627,
+                "width": 2319.5112540192927,
+                "x": 444.6559485530547,
+                "y": 1244.3729903536978
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/295.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 637.1189710610934,
+                "width": 942.4051446945339,
+                "x": 527.6141479099679,
+                "y": 2429.016077170418
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/296.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1479.9742765273313,
+                "width": 2369.2861736334407,
+                "x": 381.6077170418007,
+                "y": 1221.144694533762
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/297.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 438.1736334405143,
+                "width": 474.90675241157544,
+                "x": 957.6848874598071,
+                "y": 679.5627009646303
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/298.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 613.8906752411576,
+                "width": 570.7524115755627,
+                "x": 1397.0160771704182,
+                "y": 2511.9742765273313
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/299.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 435.5498392282957,
+                "width": 469.6591639871383,
+                "x": 1151.8456591639872,
+                "y": 1122.983922829582
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/300.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 511.02250803858533,
+                "width": 481.1575562700964,
+                "x": 1582.8424437299036,
+                "y": 1539.7041800643087
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/301.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1032.0,
+                "width": 1420.2443729903537,
+                "x": 96.23151125401932,
+                "y": 2737.620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/302.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 669.0675241157555,
+                "width": 760.9003215434084,
+                "x": 440.7974276527332,
+                "y": 1516.5530546623795
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/303.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1715.5755627009646,
+                "width": 2180.1414790996787,
+                "x": 627.1639871382637,
+                "y": 494.4308681672026
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/304.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 787.1382636655948,
+                "width": 941.9421221864952,
+                "x": 527.3826366559485,
+                "y": 981.299035369775
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/305.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 425.0546623794212,
+                "width": 456.54019292604505,
+                "x": 852.7331189710611,
+                "y": 1078.379421221865
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/306.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 648.0771704180065,
+                "width": 739.9099678456591,
+                "x": 1359.1254019292605,
+                "y": 1112.4887459807073
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/307.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1635.935691318328,
+                "width": 1692.347266881029,
+                "x": 574.0707395498393,
+                "y": 1576.2057877813506
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/308.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 796.3987138263667,
+                "width": 849.4919614147911,
+                "x": 1105.0032154340836,
+                "y": 2034.1350482315113
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/309.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1008.7717041800643,
+                "width": 1181.3247588424438,
+                "x": 1204.5530546623795,
+                "y": 1141.5048231511255
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/310.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 519.5112540192927,
+                "width": 611.3440514469453,
+                "x": 795.0096463022508,
+                "y": 1317.144694533762
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/311.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 942.4051446945339,
+                "width": 1088.411575562701,
+                "x": 1556.2958199356915,
+                "y": 1443.4726688102894
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/312.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 577.234726688103,
+                "width": 671.6913183279742,
+                "x": 550.9967845659164,
+                "y": 703.176848874598
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/313.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 856.1286173633441,
+                "width": 939.0868167202573,
+                "x": 919.1768488745981,
+                "y": 1324.0128617363346
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/314.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 968.951768488746,
+                "width": 1131.549839228296,
+                "x": 315.2411575562701,
+                "y": 255.5112540192926
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/315.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1792.4115755627008,
+                "width": 1892.733118971061,
+                "x": 608.6173633440515,
+                "y": 856.0771704180064
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/316.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 674.3151125401928,
+                "width": 522.1350482315113,
+                "x": 760.9003215434084,
+                "y": 1125.6077170418007
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/317.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 564.1157556270095,
+                "width": 746.6237942122186,
+                "x": 949.0418006430868,
+                "y": 2233.234726688103
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/318.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 919.1768488745981,
+                "width": 1061.8649517684885,
+                "x": 1038.6366559485532,
+                "y": 1214.508038585209
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/319.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 895.9485530546624,
+                "width": 1217.8263665594855,
+                "x": 1015.4083601286175,
+                "y": 1745.4405144694535
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/320.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 467.03536977491945,
+                "width": 564.1157556270097,
+                "x": 831.7427652733119,
+                "y": 1763.1897106109325
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/321.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 507.70418006430873,
+                "width": 517.6591639871382,
+                "x": 892.6302250803859,
+                "y": 2170.186495176849
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/322.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 822.9453376205788,
+                "width": 1453.4276527331187,
+                "x": 1048.5916398713828,
+                "y": 1874.855305466238
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/323.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1025.363344051447,
+                "width": 1085.0932475884244,
+                "x": 1002.1350482315113,
+                "y": 836.218649517685
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/324.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 367.33118971061094,
+                "width": 485.4019292604502,
+                "x": 962.9324758842444,
+                "y": 1183.331189710611
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/325.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 532.6302250803858,
+                "width": 540.5016077170419,
+                "x": 789.7620578778135,
+                "y": 1225.3118971061094
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/326.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1443.4726688102894,
+                "width": 2628.1157556270095,
+                "x": 152.64308681672037,
+                "y": 1908.0385852090033
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/327.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 653.7106109324759,
+                "width": 1061.864951768489,
+                "x": 1602.7524115755627,
+                "y": 1380.4244372990354
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/328.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 560.7974276527332,
+                "width": 690.2122186495178,
+                "x": 1158.096463022508,
+                "y": 1506.5209003215434
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/329.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1065.1832797427655,
+                "width": 1151.459807073955,
+                "x": 1297.4662379421222,
+                "y": 2299.6012861736335
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/330.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1682.3922829581993,
+                "width": 1426.0514469453376,
+                "x": 1597.7749196141478,
+                "y": 806.3536977491962
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/331.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 411.93569131832794,
+                "width": 592.9774919614147,
+                "x": 920.951768488746,
+                "y": 648.0771704180064
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/332.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 301.7363344051446,
+                "width": 333.22186495176845,
+                "x": 986.5466237942122,
+                "y": 892.0900321543409
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/333.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 404.06430868167195,
+                "width": 648.0771704180064,
+                "x": 697.9292604501608,
+                "y": 1855.022508038585
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/334.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 390.9453376205789,
+                "width": 422.43086816720256,
+                "x": 1369.620578778135,
+                "y": 913.08038585209
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/335.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1333.967845659164,
+                "width": 1738.8038585209003,
+                "x": 620.5273311897106,
+                "y": 1908.0385852090033
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/336.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1168.0514469453376,
+                "width": 1552.9774919614147,
+                "x": 394.88102893890687,
+                "y": 720.0771704180065
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/337.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 972.2700964630226,
+                "width": 1028.6816720257234,
+                "x": 700.1672025723473,
+                "y": 2216.6430868167204
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/338.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 511.63987138263656,
+                "width": 558.8681672025723,
+                "x": 947.1897106109325,
+                "y": 1133.4790996784566
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/339.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1785.2604501607716,
+                "width": 1698.9839228295818,
+                "x": 932.4501607717043,
+                "y": 912.540192926045
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/340.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1048.5916398713825,
+                "width": 1231.0996784565918,
+                "x": 862.7652733118971,
+                "y": 962.315112540193
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/341.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 317.4790996784566,
+                "width": 325.35048231511246,
+                "x": 1101.9935691318328,
+                "y": 1267.2926045016077
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/342.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 506.3922829581993,
+                "width": 616.5916398713827,
+                "x": 905.2090032154341,
+                "y": 558.8681672025723
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/343.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 280.7459807073956,
+                "width": 474.90675241157555,
+                "x": 1180.7073954983923,
+                "y": 1513.9292604501607
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/344.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 749.9421221864952,
+                "width": 859.4469453376207,
+                "x": 968.951768488746,
+                "y": 1762.032154340836
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/345.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1426.881028938907,
+                "width": 1519.7942122186496,
+                "x": 401.51768488745984,
+                "y": 862.7652733118971
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/346.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 600.6173633440515,
+                "width": 776.4887459807073,
+                "x": 1141.5048231511255,
+                "y": 421.427652733119
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/347.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 550.8424437299038,
+                "width": 590.662379421222,
+                "x": 922.4951768488746,
+                "y": 1695.6655948553055
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/348.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 795.0096463022508,
+                "width": 795.0096463022509,
+                "x": 721.5434083601286,
+                "y": 997.0418006430868
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/349.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 700.1672025723473,
+                "width": 806.353697749196,
+                "x": 1025.363344051447,
+                "y": 723.395498392283
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/350.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 359.45980707395506,
+                "width": 422.43086816720256,
+                "x": 1028.5273311897106,
+                "y": 1592.6430868167201
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/351.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1161.4147909967844,
+                "width": 1420.244372990354,
+                "x": 826.2636655948554,
+                "y": 1997.6334405144696
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/352.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 550.9967845659164,
+                "width": 579.8585209003215,
+                "x": 899.9614147909967,
+                "y": 1406.353697749196
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/353.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1423.5627009646305,
+                "width": 1652.5273311897104,
+                "x": 872.7202572347269,
+                "y": 736.6688102893891
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/354.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1304.102893890675,
+                "width": 1523.1125401929262,
+                "x": 849.491961414791,
+                "y": 1788.5787781350484
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/355.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 587.3440514469453,
+                "width": 557.4790996784566,
+                "x": 1032.0,
+                "y": 1562.9324758842445
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/356.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1695.6655948553057,
+                "width": 2286.327974276527,
+                "x": 305.2861736334405,
+                "y": 1606.0707395498393
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/357.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1914.6752411575565,
+                "width": 2508.6559485530547,
+                "x": 268.7845659163986,
+                "y": 1111.6398713826368
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/358.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 545.7491961414792,
+                "width": 624.4630225080386,
+                "x": 1241.0546623794212,
+                "y": 1374.8681672025723
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/359.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1171.3697749196144,
+                "width": 1154.7781350482317,
+                "x": 759.8971061093248,
+                "y": 1878.1736334405145
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/360.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 506.3922829581991,
+                "width": 661.1961414790998,
+                "x": 857.9807073954984,
+                "y": 1729.08038585209
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/361.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1290.829581993569,
+                "width": 1287.511254019293,
+                "x": 1168.0514469453376,
+                "y": 1406.9710610932477
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/362.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 686.8938906752412,
+                "width": 743.3054662379421,
+                "x": 1005.4533762057878,
+                "y": 1131.549839228296
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/363.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 474.90675241157555,
+                "width": 472.2829581993569,
+                "x": 1272.540192926045,
+                "y": 1233.1832797427653
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/364.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 620.5273311897106,
+                "width": 640.4372990353697,
+                "x": 1075.1382636655949,
+                "y": 1377.106109324759
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/365.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1004.9131832797428,
+                "width": 928.8231511254019,
+                "x": 532.6302250803858,
+                "y": 1012.7845659163987
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/366.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1486.6109324758843,
+                "width": 1549.6591639871385,
+                "x": 394.88102893890664,
+                "y": 1616.025723472669
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/367.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1423.56270096463,
+                "width": 2186.7781350482314,
+                "x": 192.46302250803865,
+                "y": 995.4983922829582
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/368.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 895.9485530546624,
+                "width": 1207.871382636656,
+                "x": 929.1318327974277,
+                "y": 1400.3344051446945
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/369.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1065.1832797427655,
+                "width": 1065.1832797427653,
+                "x": 454.6109324758843,
+                "y": 2296.282958199357
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/370.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2246.5080385852093,
+                "width": 1898.0836012861737,
+                "x": 272.1028938906752,
+                "y": 1098.3665594855306
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/371.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 443.4212218649518,
+                "width": 474.90675241157567,
+                "x": 989.1704180064309,
+                "y": 1561.1575562700964
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/372.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 753.2604501607716,
+                "width": 895.9485530546625,
+                "x": 1018.726688102894,
+                "y": 1967.768488745981
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/373.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 383.07395498392293,
+                "width": 304.36012861736333,
+                "x": 857.9807073954984,
+                "y": 1115.112540192926
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/374.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 759.8971061093248,
+                "width": 1065.183279742765,
+                "x": 1035.3183279742766,
+                "y": 716.7588424437299
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/375.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 220.39871382636647,
+                "width": 288.61736334405145,
+                "x": 674.3151125401929,
+                "y": 2046.5594855305467
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/376.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1018.726688102894,
+                "width": 945.7234726688104,
+                "x": 627.1639871382637,
+                "y": 806.3536977491962
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/377.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1025.3633440514468,
+                "width": 905.9035369774922,
+                "x": 1317.3762057877814,
+                "y": 1815.1254019292605
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/378.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1002.2893890675241,
+                "width": 1154.4694533762058,
+                "x": 732.0385852090033,
+                "y": 818.6237942122186
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/379.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 932.4501607717043,
+                "width": 1038.636655948553,
+                "x": 1884.8102893890675,
+                "y": 1045.2733118971062
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/380.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 637.5819935691318,
+                "width": 1120.3601286173632,
+                "x": 734.6623794212219,
+                "y": 1453.5819935691318
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/381.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1093.5048231511253,
+                "width": 1233.9549839228296,
+                "x": 755.7556270096463,
+                "y": 1568.3601286173632
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/382.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 577.3890675241157,
+                "width": 663.6655948553055,
+                "x": 962.315112540193,
+                "y": 1161.4147909967846
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/383.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 634.9581993569132,
+                "width": 655.9485530546624,
+                "x": 1196.450160771704,
+                "y": 1243.6784565916398
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/384.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 333.22186495176834,
+                "width": 493.27331189710605,
+                "x": 886.8424437299035,
+                "y": 1180.7073954983923
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/385.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 556.2443729903537,
+                "width": 661.1961414790997,
+                "x": 821.2475884244373,
+                "y": 1359.1254019292605
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/386.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1257.646302250804,
+                "width": 1164.7331189710612,
+                "x": 1005.4533762057877,
+                "y": 1619.3440514469455
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/387.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 317.4790996784567,
+                "width": 377.82636655948545,
+                "x": 1180.7073954983923,
+                "y": 986.5466237942122
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/388.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 985.5434083601288,
+                "width": 1015.4083601286175,
+                "x": 866.0836012861737,
+                "y": 1781.9421221864952
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/389.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 690.0578778135048,
+                "width": 876.347266881029,
+                "x": 619.2154340836013,
+                "y": 1490.315112540193
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/390.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 404.06430868167195,
+                "width": 603.4726688102894,
+                "x": 1002.2893890675241,
+                "y": 1233.1832797427653
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/391.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 939.0868167202573,
+                "width": 1091.7299035369774,
+                "x": 912.5401929260452,
+                "y": 673.620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/392.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 663.6655948553055,
+                "width": 1075.1382636655949,
+                "x": 716.7588424437299,
+                "y": 1327.331189710611
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/393.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1297.4662379421222,
+                "width": 1738.8038585209006,
+                "x": 607.2540192926044,
+                "y": 1506.5209003215434
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/394.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 341.09324758842445,
+                "width": 375.2025723472668,
+                "x": 1128.2315112540193,
+                "y": 2043.935691318328
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/395.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 922.4951768488745,
+                "width": 975.588424437299,
+                "x": 1148.1414790996785,
+                "y": 1327.331189710611
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/396.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1134.8681672025727,
+                "width": 1659.1639871382638,
+                "x": 580.7073954983923,
+                "y": 2269.7363344051446
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/397.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 755.6527331189709,
+                "width": 831.7427652733119,
+                "x": 755.652733118971,
+                "y": 1655.6141479099679
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/398.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 650.3922829581993,
+                "width": 1018.7266881028938,
+                "x": 1128.2315112540193,
+                "y": 1516.475884244373
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/399.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 739.9099678456594,
+                "width": 915.7041800643086,
+                "x": 703.176848874598,
+                "y": 1395.8585209003215
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/400.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 561.4919614147909,
+                "width": 676.9389067524114,
+                "x": 915.7041800643087,
+                "y": 1025.903536977492
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/401.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1608.488745980707,
+                "width": 1675.369774919614,
+                "x": 718.9710610932475,
+                "y": 1026.6237942122186
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/402.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 856.1286173633441,
+                "width": 978.9067524115756,
+                "x": 1131.549839228296,
+                "y": 676.9389067524116
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/403.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1506.5209003215434,
+                "width": 1669.1189710610931,
+                "x": 899.266881028939,
+                "y": 812.9903536977492
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/404.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 935.7684887459807,
+                "width": 912.5401929260452,
+                "x": 1197.9163987138263,
+                "y": 1616.025723472669
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/405.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2352.694533762058,
+                "width": 2697.800643086817,
+                "x": 222.32797427652713,
+                "y": 1616.025723472669
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/406.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 683.5755627009648,
+                "width": 716.7588424437299,
+                "x": 1347.24115755627,
+                "y": 1251.0096463022508
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/407.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 411.93569131832805,
+                "width": 535.2540192926045,
+                "x": 616.5916398713827,
+                "y": 1188.5787781350482
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/408.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 897.337620578778,
+                "width": 860.604501607717,
+                "x": 718.91961414791,
+                "y": 957.6848874598071
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/409.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 524.7588424437299,
+                "width": 571.9871382636655,
+                "x": 936.6945337620579,
+                "y": 1254.1736334405145
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/410.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1181.3247588424438,
+                "width": 1211.1897106109327,
+                "x": 985.5434083601285,
+                "y": 2468.8360128617364
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/411.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 556.2443729903538,
+                "width": 569.3633440514469,
+                "x": 595.6012861736334,
+                "y": 1018.032154340836
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/412.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1536.3858520900321,
+                "width": 1689.0289389067525,
+                "x": 590.6623794212219,
+                "y": 554.1607717041801
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/413.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 907.8327974276528,
+                "width": 1212.192926045016,
+                "x": 627.0868167202573,
+                "y": 847.4855305466237
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/414.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 832.9003215434084,
+                "width": 819.6270096463022,
+                "x": 739.9871382636657,
+                "y": 1466.7009646302251
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/415.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1187.9614147909967,
+                "width": 1197.9163987138263,
+                "x": 574.0707395498393,
+                "y": 1088.411575562701
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/416.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1974.4051446945339,
+                "width": 2309.556270096463,
+                "x": 726.7138263665595,
+                "y": 1343.9228295819937
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/417.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 674.3151125401928,
+                "width": 850.1093247588425,
+                "x": 910.4565916398714,
+                "y": 1574.2765273311898
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/418.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 577.2347266881027,
+                "width": 690.0578778135049,
+                "x": 960.3086816720257,
+                "y": 1582.1479099678456
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/419.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 577.2347266881029,
+                "width": 676.9389067524115,
+                "x": 1018.032154340836,
+                "y": 1348.6302250803858
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/420.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 372.5787781350484,
+                "width": 367.33118971061094,
+                "x": 1104.6173633440515,
+                "y": 1537.5434083601285
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/421.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 819.6270096463022,
+                "width": 955.6784565916398,
+                "x": 623.8456591639872,
+                "y": 1350.5594855305467
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/422.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 602.16077170418,
+                "width": 594.2893890675242,
+                "x": 375.85852090032154,
+                "y": 1231.871382636656
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/423.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 585.1061093247589,
+                "width": 603.4726688102894,
+                "x": 1340.75884244373,
+                "y": 886.8424437299035
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/424.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 498.5209003215434,
+                "width": 545.749196141479,
+                "x": 886.8424437299035,
+                "y": 1366.9967845659164
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/425.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 459.16398713826356,
+                "width": 485.4019292604503,
+                "x": 1248.926045016077,
+                "y": 1574.2765273311898
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/426.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 822.9453376205788,
+                "width": 905.903536977492,
+                "x": 434.70096463022514,
+                "y": 2385.8778135048233
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/427.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 640.4372990353695,
+                "width": 683.5755627009646,
+                "x": 1270.9196141479101,
+                "y": 1735.485530546624
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/428.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 570.6752411575563,
+                "width": 635.6141479099679,
+                "x": 1121.6720257234726,
+                "y": 118.07073954983923
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/429.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 842.855305466238,
+                "width": 972.2700964630226,
+                "x": 1045.2733118971062,
+                "y": 1586.1607717041802
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/430.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1685.7106109324761,
+                "width": 1645.8906752411576,
+                "x": 584.0257234726687,
+                "y": 1443.4726688102894
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/431.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1466.7009646302251,
+                "width": 1474.572347266881,
+                "x": 209.90353697749197,
+                "y": 419.80707395498393
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/432.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 2117.0932475884247,
+                "width": 2269.7363344051446,
+                "x": 126.09646302250803,
+                "y": 1350.5594855305467
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/433.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1635.9356913183283,
+                "width": 1426.8810289389069,
+                "x": 982.2250803858522,
+                "y": 1221.144694533762
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/434.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 600.8488745980708,
+                "width": 915.7041800643086,
+                "x": 671.6913183279743,
+                "y": 1317.144694533762
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/435.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 640.4372990353698,
+                "width": 756.5787781350482,
+                "x": 1002.1350482315113,
+                "y": 1008.7717041800644
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/436.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 564.1157556270095,
+                "width": 836.218649517685,
+                "x": 1051.9099678456591,
+                "y": 2803.9871382636657
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/437.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1682.3922829581993,
+                "width": 1848.3086816720258,
+                "x": 1088.411575562701,
+                "y": 1038.6366559485532
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/438.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 799.7170418006433,
+                "width": 696.8488745980708,
+                "x": 1065.1832797427653,
+                "y": 1884.8102893890675
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/439.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 451.2926045016077,
+                "width": 569.3633440514469,
+                "x": 960.3086816720257,
+                "y": 1605.7620578778135
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/440.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1007.5369774919614,
+                "width": 1537.5434083601285,
+                "x": 592.9774919614147,
+                "y": 844.8617363344051
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/441.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1921.3118971061092,
+                "width": 2727.6655948553057,
+                "x": 265.466237942122,
+                "y": 308.60450160771705
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/442.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1131.549839228296,
+                "width": 1048.5916398713828,
+                "x": 1596.1157556270098,
+                "y": 1513.1575562700966
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/443.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 952.4372990353697,
+                "width": 918.3279742765274,
+                "x": 784.5144694533763,
+                "y": 1332.887459807074
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/444.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 474.90675241157555,
+                "width": 692.6816720257234,
+                "x": 873.7234726688102,
+                "y": 1521.8006430868168
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/445.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1004.9131832797427,
+                "width": 1440.4630225080384,
+                "x": 655.9485530546624,
+                "y": 899.9614147909967
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/446.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 366.0192926045015,
+                "width": 440.7974276527332,
+                "x": 1247.6141479099679,
+                "y": 1196.4501607717043
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/447.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 955.67845659164,
+                "width": 1204.5530546623795,
+                "x": 454.6109324758843,
+                "y": 1460.0643086816722
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/448.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1197.9163987138265,
+                "width": 1347.24115755627,
+                "x": 56.411575562701046,
+                "y": 1463.3826366559485
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/449.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 548.3729903536978,
+                "width": 679.56270096463,
+                "x": 1251.549839228296,
+                "y": 1112.4887459807073
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/450.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 632.3344051446943,
+                "width": 724.1672025723473,
+                "x": 960.3086816720257,
+                "y": 1422.096463022508
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/451.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 606.096463022508,
+                "width": 671.6913183279743,
+                "x": 640.2057877813505,
+                "y": 871.0996784565916
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/452.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1934.5852090032156,
+                "width": 2322.8295819935693,
+                "x": 338.4694533762058,
+                "y": 1151.459807073955
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/453.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 842.855305466238,
+                "width": 929.1318327974275,
+                "x": 1765.3504823151127,
+                "y": 222.32797427652733
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/454.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 700.5530546623795,
+                "width": 981.2990353697749,
+                "x": 994.4180064308682,
+                "y": 1813.0418006430868
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/455.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1134.8681672025727,
+                "width": 1207.8713826366559,
+                "x": 1533.0675241157558,
+                "y": 2080.5916398713825
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/456.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1423.5627009646305,
+                "width": 1639.2540192926044,
+                "x": 491.1125401929262,
+                "y": 866.0836012861737
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/457.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1314.057877813505,
+                "width": 1473.3376205787781,
+                "x": 882.6752411575562,
+                "y": 1606.0707395498393
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/458.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1164.7331189710612,
+                "width": 1158.096463022508,
+                "x": 507.70418006430873,
+                "y": 859.4469453376206
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/459.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1739.6334405144694,
+                "width": 1311.5691318327972,
+                "x": 1129.8906752411576,
+                "y": 776.4887459807074
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/460.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 558.8681672025723,
+                "width": 742.5337620578779,
+                "x": 750.4051446945338,
+                "y": 2232.848874598071
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/461.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 687.4340836012861,
+                "width": 737.2861736334405,
+                "x": 603.4726688102894,
+                "y": 1235.807073954984
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/462.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 498.5209003215434,
+                "width": 642.829581993569,
+                "x": 1070.508038585209,
+                "y": 1532.2958199356913
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/463.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1187.9614147909967,
+                "width": 1383.7427652733118,
+                "x": 909.2218649517686,
+                "y": 939.0868167202573
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/464.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1138.186495176849,
+                "width": 1032.0000000000002,
+                "x": 1234.4180064308682,
+                "y": 1416.9260450160773
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/465.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1095.0482315112538,
+                "width": 1224.4630225080386,
+                "x": 517.6591639871383,
+                "y": 1808.4887459807076
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/466.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1310.7395498392284,
+                "width": 1466.7009646302251,
+                "x": 527.6141479099679,
+                "y": 554.1607717041801
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/467.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 396.19292604501607,
+                "width": 648.0771704180064,
+                "x": 878.9710610932476,
+                "y": 1285.6591639871383
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/468.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 550.8424437299038,
+                "width": 816.3086816720256,
+                "x": 783.1254019292605,
+                "y": 1506.5209003215434
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/469.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 922.4951768488745,
+                "width": 1035.3183279742766,
+                "x": 447.9742765273311,
+                "y": 972.2700964630226
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/470.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1178.0064308681672,
+                "width": 1400.3344051446948,
+                "x": 540.8874598070738,
+                "y": 1071.8199356913183
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/471.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 485.40192926045006,
+                "width": 440.79742765273306,
+                "x": 1012.7845659163987,
+                "y": 1710.7138263665595
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/472.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1130.8553054662377,
+                "width": 1225.3118971061094,
+                "x": 36.733118971061,
+                "y": 1658.2379421221865
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/473.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 451.2926045016077,
+                "width": 829.1189710610931,
+                "x": 655.9485530546624,
+                "y": 1422.096463022508
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/474.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 810.7524115755627,
+                "width": 886.8424437299036,
+                "x": 789.7620578778135,
+                "y": 1117.7363344051446
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/475.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 582.48231511254,
+                "width": 606.0964630225079,
+                "x": 1012.7845659163987,
+                "y": 983.9228295819936
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/476.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1101.6848874598072,
+                "width": 1251.009646302251,
+                "x": 763.2154340836012,
+                "y": 829.5819935691319
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/477.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 338.4694533762056,
+                "width": 396.19292604501607,
+                "x": 1083.6270096463022,
+                "y": 1175.459807073955
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/478.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 293.8649517684888,
+                "width": 375.2025723472668,
+                "x": 1201.6977491961416,
+                "y": 1018.032154340836
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/479.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 674.3151125401928,
+                "width": 789.7620578778136,
+                "x": 965.556270096463,
+                "y": 1180.7073954983923
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/480.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 488.0257234726688,
+                "width": 438.17363344051455,
+                "x": 571.9871382636655,
+                "y": 779.2668810289389
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/481.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 560.7974276527332,
+                "width": 779.8070739549839,
+                "x": 1224.4630225080386,
+                "y": 1221.144694533762
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/482.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 866.0836012861737,
+                "width": 985.5434083601285,
+                "x": 1310.7395498392284,
+                "y": 1937.903536977492
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/483.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 469.6591639871382,
+                "width": 530.0064308681673,
+                "x": 755.652733118971,
+                "y": 936.6945337620579
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/484.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1044.2700964630226,
+                "width": 1227.935691318328,
+                "x": 582.4823151125402,
+                "y": 1364.3729903536978
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/485.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 592.9774919614147,
+                "width": 603.4726688102894,
+                "x": 684.8102893890675,
+                "y": 863.2282958199357
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/486.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1005.4533762057881,
+                "width": 949.041800643087,
+                "x": 700.1672025723473,
+                "y": 2127.048231511254
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/487.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1045.2733118971062,
+                "width": 2724.347266881029,
+                "x": 16.59163987138254,
+                "y": 212.37299035369776
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/488.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 175.94855305466237,
+                "width": 213.50482315112538,
+                "x": 72.0257234726688,
+                "y": 226.88102893890672
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/489.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 792.3858520900324,
+                "width": 907.8327974276526,
+                "x": 705.8006430868168,
+                "y": 1424.7202572347267
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/490.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 446.04501607717043,
+                "width": 435.5498392282958,
+                "x": 1012.7845659163987,
+                "y": 1361.7491961414792
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/491.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 915.8585209003215,
+                "width": 1410.2893890675239,
+                "x": 1387.0610932475886,
+                "y": 803.0353697749197
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/492.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 613.8906752411576,
+                "width": 726.7138263665595,
+                "x": 1400.3344051446945,
+                "y": 2146.958199356913
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/493.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 756.5787781350482,
+                "width": 985.5434083601288,
+                "x": 1463.3826366559485,
+                "y": 1413.6077170418007
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/494.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 885.9935691318328,
+                "width": 962.3151125401929,
+                "x": 806.3536977491962,
+                "y": 1881.4919614147911
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/495.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 356.8360128617362,
+                "width": 341.09324758842445,
+                "x": 844.8617363344051,
+                "y": 1437.83922829582
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/496.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1018.7266881028941,
+                "width": 1124.9131832797427,
+                "x": 1002.1350482315113,
+                "y": 683.5755627009646
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/497.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 720.0771704180065,
+                "width": 856.1286173633441,
+                "x": 1088.411575562701,
+                "y": 2064.0
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/498.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 582.4823151125402,
+                "width": 453.9163987138263,
+                "x": 1217.4405144694533,
+                "y": 1445.710610932476
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/499.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1314.0578778135048,
+                "width": 1473.3376205787781,
+                "x": 660.3472668810291,
+                "y": 1609.3890675241157
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/500.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1658.6495176848875,
+                "width": 1591.7684887459807,
+                "x": 411.3183279742766,
+                "y": 802.572347266881
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/501.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 862.7652733118971,
+                "width": 988.8617363344052,
+                "x": 889.3118971061093,
+                "y": 285.3762057877814
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/502.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 464.4115755627008,
+                "width": 543.1254019292605,
+                "x": 532.6302250803858,
+                "y": 1550.6623794212219
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/503.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 511.63987138263656,
+                "width": 509.01607717041804,
+                "x": 907.8327974276527,
+                "y": 1081.0032154340836
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/504.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1785.2604501607716,
+                "width": 1748.75884244373,
+                "x": 819.6270096463022,
+                "y": 1287.5112540192927
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/505.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1619.3440514469455,
+                "width": 1768.668810289389,
+                "x": 690.2122186495176,
+                "y": 1065.1832797427653
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/506.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 457.9292604501609,
+                "width": 723.3954983922829,
+                "x": 1788.5787781350484,
+                "y": 1971.0868167202573
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/507.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 498.52090032154365,
+                "width": 498.5209003215433,
+                "x": 905.2090032154341,
+                "y": 2177.749196141479
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/508.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 715.6270096463022,
+                "width": 872.7974276527332,
+                "x": 926.3022508038584,
+                "y": 2434.469453376206
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/509.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 680.2572347266881,
+                "width": 703.485530546624,
+                "x": 1201.234726688103,
+                "y": 650.3922829581994
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/510.jpg"
+    },
+    {
+        "annotations": [
+            {
+                "class": "rect",
+                "height": 1167.5884244372992,
+                "width": 1235.807073954984,
+                "x": 823.8713826366561,
+                "y": 829.1189710610932
+            }
+        ],
+        "class": "image",
+        "filename": "data/test/511.jpg"
+    }
+]
