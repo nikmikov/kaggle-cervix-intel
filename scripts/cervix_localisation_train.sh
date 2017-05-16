@@ -6,11 +6,11 @@ TRAIN_EPOCHS=300
 BATCH_SIZE=128
 VALIDATION_SPLIT=0.9
 
-PYTHONPATH=$PYTHONPATH:$ROOTDIR python localisation/main.py \
+PYTHONPATH=$PYTHONPATH:$ROOTDIR python localizer/main.py \
           --train-input=augdata/train_annotated.json \
           --workdir=tmp/run01 \
           --train-epochs=$TRAIN_EPOCHS \
           --batch-size=$BATCH_SIZE \
           --validation-split=$VALIDATION_SPLIT \
-          --model-path=models/cervix_localisation.pth \
+          --model-path=models/cervix_localizer.pth \
           $*

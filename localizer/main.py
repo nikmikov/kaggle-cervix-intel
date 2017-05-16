@@ -160,7 +160,7 @@ def run(options):
             train_loss = train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda)
             loss_str = "%d: train_loss: %.6f" % (epoch, train_loss)
             if validation_split:
-                val_output, val_targets = evaluate(model, val_loader, is_cuda)
+                val_output, val_targets = evaluate(model, validate_loader, is_cuda)
                 val_loss = validation_loss(criterion, val_output, val_targets)
                 loss_str += ", val_loss: %.6f" % val_loss
             print(loss_str)
