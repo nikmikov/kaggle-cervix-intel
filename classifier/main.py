@@ -6,6 +6,7 @@ import time
 import argparse
 import multiprocessing
 import json
+import random
 
 import numpy as np
 from utils.misc import AverageMeter, create_dir_if_not_exists
@@ -17,7 +18,9 @@ import torch
 import torchvision
 import torchvision.transforms as transforms
 
-TARGET_SIZE=224
+from utils.transformation import RandomRotate
+
+TARGET_SIZE=256
 
 normalize = transforms.Normalize(
     mean=[0.485, 0.456, 0.406],
@@ -25,12 +28,32 @@ normalize = transforms.Normalize(
 )
 
 epochs_transform = [
-#    transforms.RandomCrop(224),
+    RandomRotate(),
     transforms.RandomHorizontalFlip(),
 #    transforms.Scale( size=224 ),
+    transforms.RandomCrop(224),
     transforms.ToTensor(),
 #    normalize
 ]
+
+TYPE_MAP = {
+    "type_1" : 0,
+    "type_2" : 1,
+    "type_3" : 2
+}
+
+class StableBCELoss(torch.nn.modules.Module):
+    def __init__(self):
+        super(StableBCELoss, self).__init__()
+    def forward(self, input, target):
+        neg_abs = - input.abs()
+        loss = input.clamp(min=0) - input * target + (1 + neg_abs.exp()).log()
+        return loss.mean()
+
+
+NUM_CLASSES = len(set(TYPE_MAP.values()))
+if NUM_CLASSES == 2:
+    NUM_CLASSES = 1
 
 def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda):
     model.train() # switch to train mode
@@ -40,6 +63,8 @@ def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda
 
     for i, (inputs, labels) in enumerate(train_loader, 0):
         # wrap them in Variable
+        if NUM_CLASSES == 1:
+            labels = labels.float()
         if is_cuda:
             labels = labels.cuda(async=True)
             inputs = inputs.cuda(async=True)
@@ -64,7 +89,8 @@ def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda
 def evaluate(model, eval_loader, is_cuda):
     # switch to evaluate mode
     model.eval()
-    result = torch.FloatTensor(0,3)
+
+    result = torch.FloatTensor(0, NUM_CLASSES)
     targets = torch.LongTensor()
     for i, (inputs, labels) in enumerate(eval_loader):
         if is_cuda:
@@ -78,6 +104,9 @@ def evaluate(model, eval_loader, is_cuda):
     return result, targets
 
 def validation_loss( criterion, output, targets):
+    if NUM_CLASSES == 1:
+        targets = targets.float()
+
     output_var = torch.autograd.Variable( output )
     target_var = torch.autograd.Variable( targets)
     loss = criterion(output_var, target_var)
@@ -105,16 +134,18 @@ def save_evaluation_results(evaluate_output_path, eval_loader, result):
 def run(options):
     work_dir = os.path.join(options.work_dir, "classifier")
     print(" + Random seed: %d" % options.random_seed)
+    random.seed(options.random_seed)
     torch.manual_seed(options.random_seed)
     np.random.seed(options.random_seed)
+    print(" + Classes: %d" % NUM_CLASSES)
 
     image_cache_dir = os.path.join(work_dir, "imgcache", str(TARGET_SIZE))
     create_dir_if_not_exists(image_cache_dir)
     print(" + Image cache set to: %s" % image_cache_dir)
 
-    model = CervixClassificationModel(num_classes = 3, batch_norm=True)
+    model = CervixClassificationModel(num_classes = NUM_CLASSES, batch_norm=True)
 #    model = torchvision.models.resnet50(num_classes = 3)
-    criterion = torch.nn.CrossEntropyLoss()
+    criterion = torch.nn.CrossEntropyLoss() if NUM_CLASSES > 2 else StableBCELoss()
 
     is_cuda = not options.no_cuda and torch.cuda.is_available()
     print(" + CUDA enabled" if is_cuda else " - CUDA disabled")
@@ -146,6 +177,7 @@ def run(options):
             batch_size = options.batch_size,
             num_workers = options.workers,
             validation_split = validation_split,
+            type_map = TYPE_MAP,
             is_train = True
         )
 
@@ -174,6 +206,7 @@ def run(options):
             batch_size = options.batch_size,
             num_workers = options.workers,
             validation_split = None,
+            type_map = TYPE_MAP,
             is_train = False
         )
 

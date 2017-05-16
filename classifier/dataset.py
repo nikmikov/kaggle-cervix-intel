@@ -10,7 +10,6 @@ from PIL import Image
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-
 import torch
 import torch.utils.data
 
@@ -47,7 +46,7 @@ class CervixClassificationDataset(torch.utils.data.Dataset):
     """
     Dataset for cervix classification training/evaluation
     """
-    def __init__(self, annotations_path, cache_dir, target_size, transform, is_train):
+    def __init__(self, annotations_path, cache_dir, target_size, transform, type_map, is_train):
         self.images = read_annotations(annotations_path)
         self.is_train = is_train
         for ai in self.images:
@@ -58,12 +57,7 @@ class CervixClassificationDataset(torch.utils.data.Dataset):
         self.cache_dir = cache_dir
         self.target_size = (target_size, target_size)
         self.transform = transform
-
-        self.type_map = {
-            "type_1" : 0,
-            "type_2" : 1,
-            "type_3" : 2
-        }
+        self.type_map = type_map
 
     def __getitem__(self, index):
         im = self.images[index]
@@ -82,8 +76,10 @@ class CervixClassificationDataset(torch.utils.data.Dataset):
             image = pil_loader(im.cachedpath[0])
 
         if not im.cachedpath[0] and self.cache_dir:
-            im.cachedpath[0] = os.path.join(self.cache_dir, name_md5(path))
+            p = os.path.join(self.cache_dir, name_md5(path))
+            im.cachedpath[0] = p
             # cache it
+            assert( not os.path.isfile(im.cachedpath[0]))
             image.save(im.cachedpath[0])
 
         if self.transform:
@@ -100,7 +96,7 @@ class CervixClassificationDataset(torch.utils.data.Dataset):
         return len(self.images)
 
 
-def create_data_loader( annotations_path, cache_dir, target_size, transform, batch_size, num_workers, validation_split, is_train ):
+def create_data_loader( annotations_path, cache_dir, target_size, transform, batch_size, num_workers, validation_split, type_map, is_train ):
     """
     Return tuple of dataloaders according split
 
@@ -111,6 +107,7 @@ def create_data_loader( annotations_path, cache_dir, target_size, transform, bat
         cache_dir = cache_dir,
         target_size = target_size,
         transform = transform,
+        type_map = type_map,
         is_train = is_train
     )
 

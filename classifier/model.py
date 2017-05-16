@@ -29,9 +29,9 @@ class CervixClassificationModel(torch.nn.Module):
             torch.nn.Linear(64 * 6 * 6, 4096),
             torch.nn.ReLU(inplace=True),
             torch.nn.Dropout(),
-#            torch.nn.Linear(4096, 4096),
-#            torch.nn.ReLU(inplace=True),
-            torch.nn.Linear(4096, num_classes)
+            torch.nn.Linear(4096, 512),
+            torch.nn.ReLU(inplace=True),
+            torch.nn.Linear(512, num_classes),
         )
 
     def _initialize_weights(self):
