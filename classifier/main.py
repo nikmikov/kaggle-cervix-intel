@@ -10,14 +10,14 @@ import json
 import numpy as np
 from utils.misc import AverageMeter, create_dir_if_not_exists
 
-from model import CervixLocalisationModel
+from model import CervixClassificationModel
 import dataset
 
 import torch
 import torchvision
 import torchvision.transforms as transforms
 
-TARGET_SIZE = 224 # target image size
+TARGET_SIZE=224
 
 normalize = transforms.Normalize(
     mean=[0.485, 0.456, 0.406],
@@ -26,12 +26,11 @@ normalize = transforms.Normalize(
 
 epochs_transform = [
 #    transforms.RandomCrop(224),
-#    transforms.RandomHorizontalFlip(),
+    transforms.RandomHorizontalFlip(),
 #    transforms.Scale( size=224 ),
     transforms.ToTensor(),
 #    normalize
 ]
-
 
 def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda):
     model.train() # switch to train mode
@@ -65,8 +64,8 @@ def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda
 def evaluate(model, eval_loader, is_cuda):
     # switch to evaluate mode
     model.eval()
-    result = torch.FloatTensor(0,4)
-    targets = torch.FloatTensor(0,4)
+    result = torch.FloatTensor(0,3)
+    targets = torch.LongTensor()
     for i, (inputs, labels) in enumerate(eval_loader):
         if is_cuda:
             inputs = inputs.cuda(async=True)
@@ -74,7 +73,8 @@ def evaluate(model, eval_loader, is_cuda):
         # compute output
         output = model(input_var)
         result = torch.cat( (result, output.data.cpu()) )
-        targets = torch.cat( (targets, labels) )
+        if torch.is_tensor(labels):
+            targets = torch.cat( (targets, labels) )
     return result, targets
 
 def validation_loss( criterion, output, targets):
@@ -83,32 +83,27 @@ def validation_loss( criterion, output, targets):
     loss = criterion(output_var, target_var)
     return loss.data[0]
 
-def save_evaluation_results(evaluate_output_path, eval_loader, output):
-    res = []
-    for i in range(len(eval_loader.dataset)):
-        ra = eval_loader.dataset.images[i]
-        w,h = ra.width, ra.height
-        x0,y0,x1,y1 = output[i].tolist()
-        x0,y0,x1,y1 = x0*w, y0*h, x1*w, y1*h
-        elem = {
-            "class" : "image",
-            "filename" : ra.filepath,
-            "annotations" : [{
-                "class" : "rect",
-                "height" : y1 - y0,
-                "width" : x1 - x0,
-                "x" : x0,
-                "y" : y0
-            }]
-        }
-        res.append(elem)
+
+def save_evaluation_results(evaluate_output_path, eval_loader, result):
+
+    softmax = torch.nn.Softmax()
+    result_np = softmax( torch.autograd.Variable(result) ).data.numpy()
+
+    imlist = eval_loader.dataset.images
+
+    rows,_ = result_np.shape
+    assert(len(imlist) == rows)
 
     with open(evaluate_output_path, 'w') as fp:
-        json.dump(res, fp)
+        print("image_name, Type_1, Type_2, Type_3", file=fp)
+        for i in range(rows):
+            a1,a2,a3 = result_np[i]
+            p = os.path.basename(imlist[i].filepath)
+            print( "%s,%.10f,%.10f,%.10f" % ( p,  a1, a2, a3) , file=fp)
 
 
 def run(options):
-    work_dir = os.path.join(options.work_dir, "localizer")
+    work_dir = os.path.join(options.work_dir, "classifier")
     print(" + Random seed: %d" % options.random_seed)
     torch.manual_seed(options.random_seed)
     np.random.seed(options.random_seed)
@@ -117,9 +112,9 @@ def run(options):
     create_dir_if_not_exists(image_cache_dir)
     print(" + Image cache set to: %s" % image_cache_dir)
 
-    model = CervixLocalisationModel(num_classes = 4, batch_norm=True)
-    criterion = torch.nn.MSELoss()
-    # optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9, weight_decay=1e-4)
+    model = CervixClassificationModel(num_classes = 3, batch_norm=True)
+#    model = torchvision.models.resnet50(num_classes = 3)
+    criterion = torch.nn.CrossEntropyLoss()
 
     is_cuda = not options.no_cuda and torch.cuda.is_available()
     print(" + CUDA enabled" if is_cuda else " - CUDA disabled")
@@ -183,8 +178,9 @@ def run(options):
         )
 
         output, targets = evaluate(model, eval_loader, is_cuda)
-        eval_loss = validation_loss(criterion, output, targets)
-        print(" + eval_loss: %.6f" % eval_loss)
+        if targets.size():
+            eval_loss = validation_loss(criterion, output, targets)
+            print(" + eval_loss: %.6f" % eval_loss)
 
         # Save results
         if options.evaluate_output_path:
@@ -205,9 +201,6 @@ def main():
     parser.add_argument("--workdir", dest="work_dir",
                         help="Work directory to store intermediate state and caches", required=True)
 
-    parser.add_argument("--eval-input", dest="evaluate_input_path",
-                        help="Path to sloth annotations file with data to evaluate", required=False)
-
     parser.add_argument('--train-epochs', dest="train_epochs", type=int,
                         help='Number of training epochs')
 
@@ -220,17 +213,20 @@ def main():
     parser.add_argument('--validation-split', default=0.8, type=float, dest="validation_split",
                         help='Train/Validation split')
 
+    parser.add_argument("--eval-input", dest="evaluate_input_path",
+                        help="Path to sloth annotations file with data to evaluate", required=False)
+
     parser.add_argument("--eval-output", dest="evaluate_output_path", required=False,
-                        help="Path to evaluation result output in sloth annotations format")
+                        help="Path to evaluation result output csv format")
+
+    parser.add_argument("--no-cuda", dest="no_cuda",action='store_true',
+                        help="Disable cuda")
 
     parser.add_argument("--dry-run", dest="dry_run", action='store_true',
                         help="Do not update model at the end of training")
 
     parser.add_argument('-j', '--workers', default=default_workers, type=int,
                         help='number of data loading workers (default: %d)' % default_workers)
-
-    parser.add_argument("--no-cuda", dest="no_cuda",action='store_true',
-                        help="Disable cuda")
 
     parser.add_argument("-r", "--rseed", dest="random_seed",type=int,
                         help="Random seed, will use current time if none specified",
@@ -239,6 +235,9 @@ def main():
     options = parser.parse_args()
 
     run(options)
+
+
+
 
 
 if __name__ == '__main__':
