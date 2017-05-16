@@ -1,0 +1,6 @@
+data/
+tmp/
+__pycache__
+*~
+output/
+models/
