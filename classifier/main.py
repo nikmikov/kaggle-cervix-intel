@@ -29,7 +29,7 @@ normalize = transforms.Normalize(
 
 epochs_transform = [
     RandomRotate(),
-    transforms.RandomHorizontalFlip(),
+#    transforms.RandomHorizontalFlip(),
 #    transforms.Scale( size=224 ),
     transforms.RandomCrop(224),
     transforms.ToTensor(),
@@ -52,8 +52,6 @@ class StableBCELoss(torch.nn.modules.Module):
 
 
 NUM_CLASSES = len(set(TYPE_MAP.values()))
-if NUM_CLASSES == 2:
-    NUM_CLASSES = 1
 
 def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda):
     model.train() # switch to train mode
@@ -63,8 +61,6 @@ def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda
 
     for i, (inputs, labels) in enumerate(train_loader, 0):
         # wrap them in Variable
-        if NUM_CLASSES == 1:
-            labels = labels.float()
         if is_cuda:
             labels = labels.cuda(async=True)
             inputs = inputs.cuda(async=True)
@@ -104,8 +100,6 @@ def evaluate(model, eval_loader, is_cuda):
     return result, targets
 
 def validation_loss( criterion, output, targets):
-    if NUM_CLASSES == 1:
-        targets = targets.float()
 
     output_var = torch.autograd.Variable( output )
     target_var = torch.autograd.Variable( targets)
@@ -144,9 +138,8 @@ def run(options):
     print(" + Image cache set to: %s" % image_cache_dir)
 
     model = CervixClassificationModel(num_classes = NUM_CLASSES, batch_norm=True)
-#    model = torchvision.models.resnet50(num_classes = 3)
-    criterion = torch.nn.CrossEntropyLoss() if NUM_CLASSES > 2 else StableBCELoss()
-
+#    model = torchvision.models.resnet50(num_classes = NUM_CLASSES)
+    criterion = torch.nn.CrossEntropyLoss()
     is_cuda = not options.no_cuda and torch.cuda.is_available()
     print(" + CUDA enabled" if is_cuda else " - CUDA disabled")
     if is_cuda:
@@ -154,7 +147,7 @@ def run(options):
         model =  torch.nn.DataParallel( model ).cuda()
         criterion = criterion.cuda()
 
-    optimizer = torch.optim.Adadelta(model.parameters(), weight_decay=1e-3)
+    optimizer = torch.optim.Adagrad(model.parameters(), weight_decay=1e-4)
 
     if os.path.isfile(options.model_path):
         print( " + Loading model: %s" % options.model_path)

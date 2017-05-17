@@ -6,6 +6,7 @@ import time
 import argparse
 import multiprocessing
 import json
+import random
 
 import numpy as np
 from utils.misc import AverageMeter, create_dir_if_not_exists
@@ -110,6 +111,7 @@ def save_evaluation_results(evaluate_output_path, eval_loader, output):
 def run(options):
     work_dir = os.path.join(options.work_dir, "localizer")
     print(" + Random seed: %d" % options.random_seed)
+    random.seed(options.random_seed)
     torch.manual_seed(options.random_seed)
     np.random.seed(options.random_seed)
 

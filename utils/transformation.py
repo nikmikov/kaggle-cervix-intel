@@ -4,9 +4,12 @@ import random
 
 from PIL import Image
 
+
 class RandomRotate(object):
-    """Randomly rotate image
+    """Randomly flips the given PIL.Image with a probability of 0.5
     """
+
     def __call__(self, img):
-        angle = random.uniform(0,360)
-        return img.rotate(angle, Image.BILINEAR, expand = True)
+        l = [Image.FLIP_LEFT_RIGHT, Image.FLIP_TOP_BOTTOM, Image.ROTATE_90, Image.ROTATE_270]
+        return img.transpose(random.choice(l))
+

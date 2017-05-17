@@ -32,8 +32,12 @@ def read_annotations(path, is_train):
         for elem in d:
             filepath = os.path.abspath(elem['filename'])
             hash = name_md5(filepath)
-            with Image.open(filepath) as img:
-                width, height = img.size
+            try:
+                with Image.open(filepath) as img:
+                    width, height = img.size
+            except OSError:
+                print(" E Error opening file: %s. Ignoring" % filepath )
+                continue
 
             annotations = elem['annotations']
             if len(annotations) == 1:

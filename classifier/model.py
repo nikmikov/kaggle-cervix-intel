@@ -4,34 +4,39 @@ class CervixClassificationModel(torch.nn.Module):
     def __init__(self, num_classes, batch_norm = False):
         super(CervixClassificationModel, self).__init__()
 
-        def conv2d(in_channels, out_channels):
+        def conv2d(in_channels, out_channels, pool = False):
             # add layers: conv, [batch_norm], relu, max_pool
             l = [ torch.nn.Conv2d(in_channels, out_channels, kernel_size=3, padding=1) ]
             if batch_norm:
                 l += [ torch.nn.BatchNorm2d(out_channels) ]
-            l +=  [
-                torch.nn.ReLU(inplace=True),
-                torch.nn.MaxPool2d(kernel_size=3, stride=2)
-            ]
+            l +=  [ torch.nn.ReLU(inplace=True) ]
+            if pool:
+                l += [ torch.nn.MaxPool2d(kernel_size=3, stride=2) ]
             self._initialize_weights()
             return l
 
 
         features = []
-        features += conv2d(3, 16)
-        features += conv2d(16, 64)
+        features += conv2d(3, 32, pool= True)
+        features += conv2d(32, 64, pool= True)
         features += conv2d(64, 64)
-        features += conv2d(64, 64)
-        features += conv2d(64, 64)
+        features += conv2d(64, 128)
+        features += conv2d(128, 128, pool= True)
+        features += conv2d(128, 256)
+        features += conv2d(256, 256, pool= True)
+        features += conv2d(256, 256)
+        features += conv2d(256, 256, pool= True)
+        features += conv2d(256, 256)
+        features += conv2d(256, 256, pool= True)
         self.features = torch.nn.Sequential ( *features )
         self.classifier = torch.nn.Sequential (
-            torch.nn.Dropout(),
-            torch.nn.Linear(64 * 6 * 6, 4096),
+            torch.nn.Dropout(p=0.25),
+            torch.nn.Linear(1024, 1024),
             torch.nn.ReLU(inplace=True),
-            torch.nn.Dropout(),
-            torch.nn.Linear(4096, 512),
+            torch.nn.Dropout(p=0.1),
+            torch.nn.Linear(1024, 256),
             torch.nn.ReLU(inplace=True),
-            torch.nn.Linear(512, num_classes),
+            torch.nn.Linear(256, num_classes),
         )
 
     def _initialize_weights(self):
