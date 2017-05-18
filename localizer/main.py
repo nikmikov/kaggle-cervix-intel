@@ -10,6 +10,8 @@ import random
 
 import numpy as np
 from utils.misc import AverageMeter, create_dir_if_not_exists
+from utils.transformation import Scale
+from utils.annotations import AnnotatedCervixImage, save_annotations
 
 from model import CervixLocalisationModel
 import dataset
@@ -18,7 +20,7 @@ import torch
 import torchvision
 import torchvision.transforms as transforms
 
-TARGET_SIZE = 224 # target image size
+TARGET_SIZE = 256 # target image size
 
 normalize = transforms.Normalize(
     mean=[0.485, 0.456, 0.406],
@@ -31,6 +33,11 @@ epochs_transform = [
 #    transforms.Scale( size=224 ),
     transforms.ToTensor(),
 #    normalize
+]
+
+eval_transform = [
+    Scale( size=[TARGET_SIZE, TARGET_SIZE] ),
+    transforms.ToTensor(),
 ]
 
 
@@ -88,7 +95,7 @@ def save_evaluation_results(evaluate_output_path, eval_loader, output):
     res = []
     for i in range(len(eval_loader.dataset)):
         ra = eval_loader.dataset.images[i]
-        w,h = ra.width, ra.height
+        w,h = ra.image_width, ra.image_height
         x0,y0,x1,y1 = output[i].tolist()
         x0,y0,x1,y1 = x0*w, y0*h, x1*w, y1*h
         elem = {
@@ -115,13 +122,10 @@ def run(options):
     torch.manual_seed(options.random_seed)
     np.random.seed(options.random_seed)
 
-    image_cache_dir = os.path.join(work_dir, "imgcache", str(TARGET_SIZE))
-    create_dir_if_not_exists(image_cache_dir)
-    print(" + Image cache set to: %s" % image_cache_dir)
-
-    model = CervixLocalisationModel(num_classes = 4, batch_norm=True)
+#    model = CervixLocalisationModel(num_classes = 4, batch_norm=True)
+    model = torchvision.models.resnet34(num_classes = 4)
     criterion = torch.nn.MSELoss()
-    # optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9, weight_decay=1e-4)
+
 
     is_cuda = not options.no_cuda and torch.cuda.is_available()
     print(" + CUDA enabled" if is_cuda else " - CUDA disabled")
@@ -130,6 +134,7 @@ def run(options):
         model =  torch.nn.DataParallel( model ).cuda()
         criterion = criterion.cuda()
 
+#    optimizer = torch.optim.SGD(model.parameters(), lr=0.001, momentum=0.9, weight_decay=1e-4)
     optimizer = torch.optim.Adadelta(model.parameters(), weight_decay=1e-3)
 
     if os.path.isfile(options.model_path):
@@ -147,14 +152,13 @@ def run(options):
 
         train_loader, validate_loader = dataset.create_data_loader(
             annotations_path = options.train_input_path,
-            cache_dir = image_cache_dir,
-            target_size = TARGET_SIZE,
             transform = transforms.Compose (epochs_transform),
             batch_size = options.batch_size,
             num_workers = options.workers,
             validation_split = validation_split,
             is_train = True
         )
+        print(" +          training samples: %.d" % len(train_loader.dataset) )
 
         for epoch in range(0, options.train_epochs):
             # train on single epoch
@@ -175,9 +179,7 @@ def run(options):
         print(" + Evaluating input file: %s" % options.evaluate_input_path)
         eval_loader,_ = dataset.create_data_loader(
             annotations_path = options.evaluate_input_path,
-            cache_dir = image_cache_dir,
-            target_size = TARGET_SIZE,
-            transform = transforms.Compose (epochs_transform),
+            transform = transforms.Compose (eval_transform),
             batch_size = options.batch_size,
             num_workers = options.workers,
             validation_split = None,
@@ -191,6 +193,7 @@ def run(options):
         # Save results
         if options.evaluate_output_path:
             print(" + Exporting results to: %s" % options.evaluate_output_path)
+#            save_annotations(res, options.output)
             save_evaluation_results(options.evaluate_output_path, eval_loader, output)
 
     print(" + DONE")

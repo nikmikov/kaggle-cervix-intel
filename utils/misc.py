@@ -1,5 +1,6 @@
 import os
 import errno
+import hashlib
 
 def create_dir_if_not_exists(path):
     try:
@@ -9,6 +10,11 @@ def create_dir_if_not_exists(path):
             pass
         else:
             raise
+
+def str_to_md5(s):
+    m = hashlib.md5()
+    m.update(s.encode('utf-8'))
+    return m.hexdigest()
 
 class AverageMeter(object):
     """Computes and stores the average and current value"""

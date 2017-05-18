@@ -7,7 +7,7 @@ BATCH_SIZE=128
 VALIDATION_SPLIT=0.9
 
 PYTHONPATH=$PYTHONPATH:$ROOTDIR python localizer/main.py \
-          --train-input=augdata/train_annotated.json \
+          --train-input=output/train_localizer_aug.json \
           --workdir=tmp/run01 \
           --train-epochs=$TRAIN_EPOCHS \
           --batch-size=$BATCH_SIZE \

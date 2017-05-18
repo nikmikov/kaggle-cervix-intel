@@ -26,7 +26,7 @@ class CervixLocalisationModel(torch.nn.Module):
         self.features = torch.nn.Sequential ( *features )
         self.classifier = torch.nn.Sequential (
             torch.nn.Dropout(),
-            torch.nn.Linear(64 * 6 * 6, 4096),
+            torch.nn.Linear(64 * 7 * 7, 4096),
             torch.nn.ReLU(inplace=True),
             torch.nn.Dropout(),
 #            torch.nn.Linear(4096, 4096),
