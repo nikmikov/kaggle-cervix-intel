@@ -13,7 +13,7 @@ from utils.misc import AverageMeter, create_dir_if_not_exists
 from utils.transformation import Scale
 from utils.annotations import AnnotatedCervixImage, save_annotations
 
-from model import CervixLocalisationModel
+from model import CervixLocalisationModel, alexnet
 import dataset
 
 import torch
@@ -91,28 +91,11 @@ def validation_loss( criterion, output, targets):
     loss = criterion(output_var, target_var)
     return loss.data[0]
 
-def save_evaluation_results(evaluate_output_path, eval_loader, output):
-    res = []
+def extract_results(eval_loader, output):
     for i in range(len(eval_loader.dataset)):
         ra = eval_loader.dataset.images[i]
-        w,h = ra.image_width, ra.image_height
         x0,y0,x1,y1 = output[i].tolist()
-        x0,y0,x1,y1 = x0*w, y0*h, x1*w, y1*h
-        elem = {
-            "class" : "image",
-            "filename" : ra.filepath,
-            "annotations" : [{
-                "class" : "rect",
-                "height" : y1 - y0,
-                "width" : x1 - x0,
-                "x" : x0,
-                "y" : y0
-            }]
-        }
-        res.append(elem)
-
-    with open(evaluate_output_path, 'w') as fp:
-        json.dump(res, fp)
+        yield ra.with_coords(x0,y0,x1,y1)
 
 
 def run(options):
@@ -123,7 +106,7 @@ def run(options):
     np.random.seed(options.random_seed)
 
 #    model = CervixLocalisationModel(num_classes = 4, batch_norm=True)
-    model = torchvision.models.resnet34(num_classes = 4)
+    model = alexnet(num_classes = 4)
     criterion = torch.nn.MSELoss()
 
 
@@ -193,8 +176,8 @@ def run(options):
         # Save results
         if options.evaluate_output_path:
             print(" + Exporting results to: %s" % options.evaluate_output_path)
-#            save_annotations(res, options.output)
-            save_evaluation_results(options.evaluate_output_path, eval_loader, output)
+            res = extract_results( eval_loader, output )
+            save_annotations( res , options.evaluate_output_path)
 
     print(" + DONE")
 

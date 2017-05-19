@@ -16,14 +16,6 @@ from PIL import Image
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-def with_filename(md, filename):
-    return AnnotatedImage(filename, md.cervix_type, md.image_width, md.image_height, md.xmin, md.ymin, md.xmax, md.ymax )
-
-def rotate_90(basename, md, image):
-    image = image.transpose(Image.ROTATE_90)
-#    md =
-    return md, image
-
 
 angles = {
     90  : Image.ROTATE_90,
