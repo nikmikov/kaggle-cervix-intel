@@ -20,19 +20,17 @@ class CervixLocalisationModel(torch.nn.Module):
         features = []
         features += conv2d(3, 16)
         features += conv2d(16, 64)
-        features += conv2d(64, 128, pool = False)
-        features += conv2d(128, 128)
-        features += conv2d(128, 128)
-        features += conv2d(128, 64, pool = False)
+        features += conv2d(64, 64)
+        features += conv2d(64, 64)
         features += conv2d(64, 64)
         self.features = torch.nn.Sequential ( *features )
         self.classifier = torch.nn.Sequential (
-            torch.nn.Dropout(p=0.2),
-            torch.nn.Linear(64 * 7 * 7, 2*4096),
-            torch.nn.BatchNorm1d(2*4096),
+            torch.nn.Dropout(p=0.25),
+            torch.nn.Linear(64 * 7 * 7, 4096),
+            torch.nn.BatchNorm1d(4096),
             torch.nn.ReLU(inplace=True),
-            torch.nn.Dropout(p=0.2),
-            torch.nn.Linear(2*4096, 4096),
+            torch.nn.Dropout(p=0.25),
+            torch.nn.Linear(4096, 4096),
             torch.nn.BatchNorm1d(4096),
             torch.nn.ReLU(inplace=True),
             torch.nn.Linear(4096, num_classes)
@@ -61,7 +59,6 @@ class CervixLocalisationModel(torch.nn.Module):
 
 
 class AlexNet(nn.Module):
-
     def __init__(self, num_classes=1000):
         super(AlexNet, self).__init__()
         self.features = nn.Sequential(

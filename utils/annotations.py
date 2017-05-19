@@ -16,6 +16,7 @@ def rotate_point(x, y, a):
 # cervix type will be inferred from file name 1,2,3 or None if unable to infer
 class AnnotatedCervixImage:
     def __init__(self, filepath, cervix_type, image_width, image_height, xmin, ymin, xmax, ymax ):
+        assert(xmin is None or (xmin <= xmax and ymin <= ymax))
         self._filepath = filepath
         self._cervix_type = cervix_type
         self._image_width = image_width
@@ -58,10 +59,12 @@ class AnnotatedCervixImage:
     def with_coords( self, xmin, ymin, xmax, ymax):
         n = copy.copy(self)
         n._xmin, n._ymin, n._xmax, n._ymax = xmin, ymin, xmax, ymax
+        assert(n.xmin <= n.xmax and n.ymin <= n.ymax)
         return n
 
     def with_size( self, sz ):
         width, height = sz
+        assert(width > 0 and height > 0)
         n = copy.copy(self)
         n._image_width, n._image_height = width, height
         return n
@@ -71,6 +74,12 @@ class AnnotatedCervixImage:
         theta = math.radians(angle)
         n._xmin, n._ymin = rotate_point(n._xmin, n._ymin, theta)
         n._xmax, n._ymax = rotate_point(n._xmax, n._ymax, theta)
+        if n._xmin > n._xmax:
+            n._xmax, n._xmin = n._xmin, n._xmax
+        if n._ymin > n._ymax:
+            n._ymax, n._ymin = n._ymin, n._ymax
+
+        assert(n.xmin <= n.xmax and n.ymin <= n.ymax)
         return n
 
     def ratio(self):
@@ -123,7 +132,9 @@ def save_annotations(alist, output_path):
     res = []
     for im in alist:
         w,h,x0,y0,x1,y1 = im.image_width, im.image_height, im.xmin, im.ymin, im.xmax, im.ymax
+        assert(w > 0 and h > 0)
         x0,y0,x1,y1 = x0*w, y0*h, x1*w, y1*h
+        assert(x0 <= x1 and y0 <= y1)
         elem = {
             "class" : "image",
             "filename" : im.filepath,

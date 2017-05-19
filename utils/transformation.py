@@ -6,12 +6,15 @@ from PIL import Image
 
 
 class RandomRotate(object):
-    """Randomly flips the given PIL.Image with a probability of 0.5
+    """Randomly flip or rotates the given PIL.Image
     """
 
     def __call__(self, img):
-        l = [Image.FLIP_LEFT_RIGHT, Image.FLIP_TOP_BOTTOM, Image.ROTATE_90, Image.ROTATE_270]
-        return img.transpose(random.choice(l))
+        l = [Image.FLIP_LEFT_RIGHT, Image.FLIP_TOP_BOTTOM, Image.ROTATE_90, Image.ROTATE_180, Image.ROTATE_270, Image.TRANSPOSE, None]
+        v = random.choice(l)
+        if not v:
+            return img
+        return img.transpose(v)
 
 
 class Scale(object):

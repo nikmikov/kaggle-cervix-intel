@@ -22,6 +22,8 @@ import torchvision.transforms as transforms
 
 TARGET_SIZE = 256 # target image size
 
+NUM_CLASSES = 4
+
 normalize = transforms.Normalize(
     mean=[0.485, 0.456, 0.406],
     std=[0.229, 0.224, 0.225]
@@ -73,8 +75,8 @@ def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda
 def evaluate(model, eval_loader, is_cuda):
     # switch to evaluate mode
     model.eval()
-    result = torch.FloatTensor(0,4)
-    targets = torch.FloatTensor(0,4)
+    result = torch.FloatTensor(0,NUM_CLASSES)
+    targets = torch.FloatTensor(0,NUM_CLASSES)
     for i, (inputs, labels) in enumerate(eval_loader):
         if is_cuda:
             inputs = inputs.cuda(async=True)
@@ -105,10 +107,10 @@ def run(options):
     torch.manual_seed(options.random_seed)
     np.random.seed(options.random_seed)
 
-#    model = CervixLocalisationModel(num_classes = 4, batch_norm=True)
-    model = alexnet(num_classes = 4)
+#    model = CervixLocalisationModel(num_classes = NUM_CLASSES, batch_norm=True)
+    model = torchvision.models.resnet34(num_classes = NUM_CLASSES)
     criterion = torch.nn.MSELoss()
-
+#    criterion= torch.nn.CrossEntropyLoss()
 
     is_cuda = not options.no_cuda and torch.cuda.is_available()
     print(" + CUDA enabled" if is_cuda else " - CUDA disabled")
@@ -118,7 +120,7 @@ def run(options):
         criterion = criterion.cuda()
 
 #    optimizer = torch.optim.SGD(model.parameters(), lr=0.001, momentum=0.9, weight_decay=1e-4)
-    optimizer = torch.optim.Adadelta(model.parameters(), weight_decay=1e-3)
+    optimizer = torch.optim.Adadelta(model.parameters(), weight_decay=options.l2reg)
 
     if os.path.isfile(options.model_path):
         print( " + Loading model: %s" % options.model_path)
@@ -204,6 +206,9 @@ def main():
 
     parser.add_argument('--batch-size', type=int, required=True,
                         help='Mini-batch size')
+
+    parser.add_argument('--l2reg', type=float, required=False, default=1e-3,
+                        help='L2 regularization')
 
     parser.add_argument('--validation-split', default=0.8, type=float, dest="validation_split",
                         help='Train/Validation split')

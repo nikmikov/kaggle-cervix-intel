@@ -33,7 +33,6 @@ def get_crop_boxes(im):
 
 
 def rotate(output_dir, basename, target_size, image, im):
-
     def rotate(angle):
         i = image
         m = im
