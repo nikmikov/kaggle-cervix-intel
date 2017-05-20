@@ -28,12 +28,13 @@ normalize = transforms.Normalize(
 )
 
 epochs_transform = [
+    transforms.Scale(256),
     RandomRotate(),
 #    transforms.RandomHorizontalFlip(),
 #    transforms.Scale( size=224 ),
     transforms.RandomCrop(224),
     transforms.ToTensor(),
-#    normalize
+    normalize
 ]
 
 TYPE_MAP = {
@@ -99,6 +100,19 @@ def evaluate(model, eval_loader, is_cuda):
             targets = torch.cat( (targets, labels) )
     return result, targets
 
+def evaluate_avg(model, eval_loader, is_cuda, num_samples):
+
+    output = None
+    for i in range(num_samples):
+        o1, targets = evaluate(model, eval_loader, is_cuda)
+        if not output is None:
+            output.add_(o1)
+        else:
+            output = o1
+    output.div_(num_samples)
+
+    return output, targets
+
 def validation_loss( criterion, output, targets):
 
     output_var = torch.autograd.Variable( output )
@@ -110,15 +124,35 @@ def validation_loss( criterion, output, targets):
 def save_evaluation_results(evaluate_output_path, eval_loader, result):
 
     softmax = torch.nn.Softmax()
-    result_np = softmax( torch.autograd.Variable(result) ).data.numpy()
+    result = softmax( torch.autograd.Variable(result) )
+
+    """
+    rows,_ = result.size()
+    print(rows)
+
+    top5_p, top5_i = torch.topk(result.data, 5)
+    for i in range(rows):
+        print("*********")
+        r = top5_i[i].tolist()
+        for ix in r:
+            prob = result.data.numpy()[i, ix]
+#            im = eval_loader.dataset.images[ix]
+#            fname = im.filepath
+            print(ix, prob)
+    return
+
+    print(top5)
+
+    return
+    """
 
     imlist = eval_loader.dataset.images
-
+    result_np = result.data.numpy()
     rows,_ = result_np.shape
     assert(len(imlist) == rows)
 
     with open(evaluate_output_path, 'w') as fp:
-        print("image_name, Type_1, Type_2, Type_3", file=fp)
+        print("image_name,Type_1,Type_2,Type_3", file=fp)
         for i in range(rows):
             a1,a2,a3 = result_np[i]
             p = os.path.basename(imlist[i].filepath)
@@ -133,12 +167,8 @@ def run(options):
     np.random.seed(options.random_seed)
     print(" + Classes: %d" % NUM_CLASSES)
 
-    image_cache_dir = os.path.join(work_dir, "imgcache", str(TARGET_SIZE))
-    create_dir_if_not_exists(image_cache_dir)
-    print(" + Image cache set to: %s" % image_cache_dir)
-
-    model = CervixClassificationModel(num_classes = NUM_CLASSES, batch_norm=True)
-#    model = torchvision.models.resnet50(num_classes = NUM_CLASSES)
+    #model = CervixClassificationModel(num_classes = NUM_CLASSES, batch_norm=True)
+    model = torchvision.models.resnet18(num_classes = NUM_CLASSES)
     criterion = torch.nn.CrossEntropyLoss()
     is_cuda = not options.no_cuda and torch.cuda.is_available()
     print(" + CUDA enabled" if is_cuda else " - CUDA disabled")
@@ -147,7 +177,7 @@ def run(options):
         model =  torch.nn.DataParallel( model ).cuda()
         criterion = criterion.cuda()
 
-    optimizer = torch.optim.Adagrad(model.parameters(), weight_decay=1e-4)
+    optimizer = torch.optim.Adadelta(model.parameters(), weight_decay=1e-3)
 
     if os.path.isfile(options.model_path):
         print( " + Loading model: %s" % options.model_path)
@@ -164,13 +194,10 @@ def run(options):
 
         train_loader, validate_loader = dataset.create_data_loader(
             annotations_path = options.train_input_path,
-            cache_dir = image_cache_dir,
-            target_size = TARGET_SIZE,
             transform = transforms.Compose (epochs_transform),
             batch_size = options.batch_size,
             num_workers = options.workers,
             validation_split = validation_split,
-            type_map = TYPE_MAP,
             is_train = True
         )
 
@@ -179,7 +206,7 @@ def run(options):
             train_loss = train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda)
             loss_str = "%d: train_loss: %.6f" % (epoch, train_loss)
             if validation_split:
-                val_output, val_targets = evaluate(model, validate_loader, is_cuda)
+                val_output, val_targets = evaluate_avg(model, validate_loader, is_cuda,10)
                 val_loss = validation_loss(criterion, val_output, val_targets)
                 loss_str += ", val_loss: %.6f" % val_loss
             print(loss_str)
@@ -193,17 +220,14 @@ def run(options):
         print(" + Evaluating input file: %s" % options.evaluate_input_path)
         eval_loader,_ = dataset.create_data_loader(
             annotations_path = options.evaluate_input_path,
-            cache_dir = image_cache_dir,
-            target_size = TARGET_SIZE,
             transform = transforms.Compose (epochs_transform),
-            batch_size = options.batch_size,
             num_workers = options.workers,
+            batch_size = options.batch_size,
             validation_split = None,
-            type_map = TYPE_MAP,
             is_train = False
         )
 
-        output, targets = evaluate(model, eval_loader, is_cuda)
+        output, targets = evaluate_avg(model, eval_loader, is_cuda, 1)
         if targets.size():
             eval_loss = validation_loss(criterion, output, targets)
             print(" + eval_loss: %.6f" % eval_loss)

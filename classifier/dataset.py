@@ -6,97 +6,61 @@ import argparse
 import hashlib
 import numpy as np
 
+import torch
+import torch.utils.data
+
 from PIL import Image
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-import torch
-import torch.utils.data
-
-from collections import namedtuple
-AnnotatedImage =  namedtuple('AnnotatedImage', 'filepath cachedpath x y width height')
+from utils.annotations import AnnotatedCervixImage, read_annotations
 
 def pil_loader(path):
     return Image.open(path).convert('RGB')
 
-def name_md5(path):
-    m = hashlib.md5()
-    m.update(path.encode('utf-8'))
-    return m.hexdigest() + ".jpg"
+class SequentialSubsetSampler(torch.utils.data.sampler.Sampler):
+    """Samples elements sequentially, always in the same order.
 
-def read_annotations(path):
-    alist = []
-    with open(path) as json_data:
-        d = json.load(json_data)
-        for elem in d:
-            filepath = os.path.abspath(elem['filename'])
-            hash = name_md5(filepath)
-            annotations = elem['annotations']
-            if len(annotations) == 1:
-                a = annotations[0]
-                ra = AnnotatedImage(filepath, [None], a['x'], a['y'],  a['width'],  a['height'])
-                alist.append(ra)
-            else:
-                print("Image %s not annotated. Skipping" % filepath)
+    Arguments:
+        data_source (Dataset): dataset to sample from
+    """
 
-    return alist
+    def __init__(self, data_source):
+        self.samples = data_source
 
+    def __iter__(self):
+        return iter(self.samples)
+
+    def __len__(self):
+        return len(self.samples)
 
 class CervixClassificationDataset(torch.utils.data.Dataset):
     """
     Dataset for cervix classification training/evaluation
     """
-    def __init__(self, annotations_path, cache_dir, target_size, transform, type_map, is_train):
+    def __init__(self, annotations_path, transform, is_train):
         self.images = read_annotations(annotations_path)
         self.is_train = is_train
-        for ai in self.images:
-            cpath = os.path.join(cache_dir, name_md5(ai.filepath))
-            if os.path.isfile(cpath):
-                ai.cachedpath[0] = cpath
-
-        self.cache_dir = cache_dir
-        self.target_size = (target_size, target_size)
         self.transform = transform
-        self.type_map = type_map
 
     def __getitem__(self, index):
         im = self.images[index]
-        path = im.filepath
-
-        if not im.cachedpath[0]:
-            # load and transform
-            image = pil_loader(path)
-            # crop at bounding box
-            sz = max(im.width, im.height)
-            image = image.crop( (im.x, im.y, im.x + sz, im.y + sz) )
-            # resize
-            image = image.resize( self.target_size, Image.BILINEAR  )
-        else:
-            # load cached image
-            image = pil_loader(im.cachedpath[0])
-
-        if not im.cachedpath[0] and self.cache_dir:
-            p = os.path.join(self.cache_dir, name_md5(path))
-            im.cachedpath[0] = p
-            # cache it
-            assert( not os.path.isfile(im.cachedpath[0]))
-            image.save(im.cachedpath[0])
+        image = pil_loader(im.filepath)
 
         if self.transform:
             image = self.transform(image)
 
-        t = path.split('/')[-2].lower()
-        if t in self.type_map:
-            v = self.type_map[t]
-            return image, v
+        if self.is_train:
+            return image, im.cervix_type - 1
         else:
             return image, []
+
 
     def __len__(self):
         return len(self.images)
 
 
-def create_data_loader( annotations_path, cache_dir, target_size, transform, batch_size, num_workers, validation_split, type_map, is_train ):
+def create_data_loader( annotations_path, transform, batch_size, num_workers, validation_split, is_train ):
     """
     Return tuple of dataloaders according split
 
@@ -104,10 +68,7 @@ def create_data_loader( annotations_path, cache_dir, target_size, transform, bat
 
     image_dataset = CervixClassificationDataset(
         annotations_path = annotations_path,
-        cache_dir = cache_dir,
-        target_size = target_size,
         transform = transform,
-        type_map = type_map,
         is_train = is_train
     )
 
@@ -130,7 +91,7 @@ def create_data_loader( annotations_path, cache_dir, target_size, transform, bat
         indices = np.random.permutation(len(image_dataset))
         split_pt = int(len(image_dataset) * validation_split)
         sampler1 = torch.utils.data.sampler.SubsetRandomSampler(indices[:split_pt])
-        sampler2 = torch.utils.data.sampler.SubsetRandomSampler(indices[split_pt:])
+        sampler2 = SequentialSubsetSampler(indices[split_pt:])
         loader2 = create_loader(sampler2)
 
 
