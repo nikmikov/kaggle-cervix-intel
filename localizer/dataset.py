@@ -11,12 +11,10 @@ from PIL import Image
 import torch
 import torch.utils.data
 
-
 from utils.annotations import AnnotatedCervixImage, read_annotations
 
 def pil_loader(path):
     return Image.open(path).convert('RGB')
-
 
 class CervixLocalisationDataset(torch.utils.data.Dataset):
     """
@@ -41,7 +39,6 @@ class CervixLocalisationDataset(torch.utils.data.Dataset):
 
     def __len__(self):
         return len(self.images)
-
 
 def create_data_loader( annotations_path, transform, batch_size, num_workers, validation_split, is_train ):
     """

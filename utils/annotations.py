@@ -109,9 +109,12 @@ def read_annotations(path):
                 continue
 
             cervix_type = None
-            t = filepath.split('/')[-2].lower()
-            if t in type_map:
-                cervix_type = type_map[t]
+            if 'cervix_type' in elem:
+                cervix_type = elem['cervix_type']
+            else:
+                t = filepath.split('/')[-2].lower()
+                if t in type_map:
+                    cervix_type = type_map[t]
 
             annotations = elem['annotations']
             if len(annotations) == 1:
@@ -146,6 +149,8 @@ def save_annotations(alist, output_path):
                 "y" : y0
             }]
         }
+        if im.cervix_type:
+            elem['cervix_type'] = im.cervix_type
         res.append(elem)
 
     with open(output_path, 'w') as fp:
