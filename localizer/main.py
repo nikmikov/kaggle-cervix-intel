@@ -22,7 +22,7 @@ import torchvision.transforms as transforms
 
 TARGET_SIZE = 256 # target image size
 
-NUM_CLASSES = 4
+NUM_CLASSES = 3
 
 normalize = transforms.Normalize(
     mean=[0.485, 0.456, 0.406],
@@ -34,7 +34,7 @@ epochs_transform = [
 #    transforms.RandomHorizontalFlip(),
 #    transforms.Scale( size=224 ),
     transforms.ToTensor(),
-#    normalize
+    normalize
 ]
 
 eval_transform = [
@@ -96,8 +96,8 @@ def validation_loss( criterion, output, targets):
 def extract_results(eval_loader, output):
     for i in range(len(eval_loader.dataset)):
         ra = eval_loader.dataset.images[i]
-        x0,y0,x1,y1 = output[i].tolist()
-        yield ra.with_coords(x0,y0,x1,y1)
+        x0,y0,w = output[i].tolist()
+        yield ra.with_coords(x0,y0,x0+w,y0+w)
 
 
 def run(options):
@@ -108,7 +108,7 @@ def run(options):
     np.random.seed(options.random_seed)
 
 #    model = CervixLocalisationModel(num_classes = NUM_CLASSES, batch_norm=True)
-    model = torchvision.models.resnet34(num_classes = NUM_CLASSES)
+    model = torchvision.models.resnet18(num_classes = NUM_CLASSES)
     criterion = torch.nn.MSELoss()
 #    criterion= torch.nn.CrossEntropyLoss()
 

@@ -26,5 +26,3 @@ class Scale(object):
 
     def __call__(self, img):
         return img.resize(self.size, self.interpolation)
-
-

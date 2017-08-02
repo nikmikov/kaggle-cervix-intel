@@ -9,6 +9,7 @@ import json
 import random
 
 import numpy as np
+import pandas as pd
 from utils.misc import AverageMeter, create_dir_if_not_exists
 
 from model import CervixClassificationModel
@@ -16,41 +17,12 @@ import dataset
 
 import torch
 import torchvision
-import torchvision.transforms as transforms
-
-from utils.transformation import RandomRotate
-
-TARGET_SIZE=256
-
-normalize = transforms.Normalize(
-    mean=[0.485, 0.456, 0.406],
-    std=[0.229, 0.224, 0.225]
-)
-
-epochs_transform = [
-    transforms.Scale(256),
-    RandomRotate(),
-#    transforms.RandomHorizontalFlip(),
-#    transforms.Scale( size=224 ),
-    transforms.RandomCrop(224),
-    transforms.ToTensor(),
-    normalize
-]
 
 TYPE_MAP = {
-    "type_1" : 0,
-    "type_2" : 1,
-    "type_3" : 2
+    1 : 0,
+    2 : 1,
+    3 : 2
 }
-
-class StableBCELoss(torch.nn.modules.Module):
-    def __init__(self):
-        super(StableBCELoss, self).__init__()
-    def forward(self, input, target):
-        neg_abs = - input.abs()
-        loss = input.clamp(min=0) - input * target + (1 + neg_abs.exp()).log()
-        return loss.mean()
-
 
 NUM_CLASSES = len(set(TYPE_MAP.values()))
 
@@ -62,18 +34,20 @@ def train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda
 
     for i, (inputs, labels) in enumerate(train_loader, 0):
         # wrap them in Variable
+        X = inputs
         if is_cuda:
             labels = labels.cuda(async=True)
-            inputs = inputs.cuda(async=True)
+            X = [ x.cuda(async=True) for x in inputs]
 
-        input_var = torch.autograd.Variable( inputs )
+        X_var = [ torch.autograd.Variable( x ) for x in X ]
         label_var = torch.autograd.Variable( labels )
 
         # zero the parameter gradients
         optimizer.zero_grad()
-
+        #softmax = torch.nn.Softmax()
         # forward + backward + optimize
-        output = model(input_var)
+        output = model( X_var )
+#        output = softmax(output)
         loss = criterion(output, label_var)
         loss.backward()
         optimizer.step()
@@ -88,20 +62,23 @@ def evaluate(model, eval_loader, is_cuda):
     model.eval()
 
     result = torch.FloatTensor(0, NUM_CLASSES)
-    targets = torch.LongTensor()
+    targets = []
     for i, (inputs, labels) in enumerate(eval_loader):
+        X = inputs
         if is_cuda:
-            inputs = inputs.cuda(async=True)
-        input_var = torch.autograd.Variable( inputs, volatile=True )
+            X = [ x.cuda(async=True) for x in inputs]
+
+        X_var = [ torch.autograd.Variable( x, volatile=True ) for x in X ]
         # compute output
-        output = model(input_var)
-        result = torch.cat( (result, output.data.cpu()) )
+        output = model(X_var)
+        result = torch.cat( (result, output.data.float().cpu()) )
         if torch.is_tensor(labels):
-            targets = torch.cat( (targets, labels) )
-    return result, targets
+            targets.append(labels)
+    return result, torch.cat(targets) if len(targets) > 0 else torch.LongTensor()
+
 
 def evaluate_avg(model, eval_loader, is_cuda, num_samples):
-
+#    softmax = torch.nn.Softmax()
     output = None
     for i in range(num_samples):
         o1, targets = evaluate(model, eval_loader, is_cuda)
@@ -110,44 +87,45 @@ def evaluate_avg(model, eval_loader, is_cuda, num_samples):
         else:
             output = o1
     output.div_(num_samples)
-
+#    output = softmax( torch.autograd.Variable(output) ).data
     return output, targets
 
 def validation_loss( criterion, output, targets):
-
     output_var = torch.autograd.Variable( output )
     target_var = torch.autograd.Variable( targets)
     loss = criterion(output_var, target_var)
+
     return loss.data[0]
+
+def print_worst(epoch,k,images, output, targets, fp):
+    rows = targets.size()[0]
+    assert(len(images) == rows)
+    res = torch.zeros(rows)
+    for i  in range(rows):
+        t = targets[i]
+#        print(t, images[i].cervix_type, images[i].origpath)
+        assert(t == images[i].cervix_type-1)
+        res[i] = output[i,t]
+    p_v, p_i = res.topk(k=k, dim=0,largest = False)
+    print(";; epoch: %d" % epoch, file=fp)
+    for i in range(k):
+        ix = p_i[i]
+        loss = p_v[i]
+        ap =  os.path.abspath(images[ix].origpath)
+        ip = os.path.abspath(images[ix].filepath)
+        s = """%d,%.6f,"%s","%s",%.4f,%.4f,%.4f""" % ( ix, loss, ap, ip, output[ix,0], output[ix,1], output[ix,2])
+        print( s, file=fp)
+
+
+def accuracy(output, targets):
+    vals, indices = output.topk(1)
+    return torch.eq(targets, indices).float().mean()
 
 
 def save_evaluation_results(evaluate_output_path, eval_loader, result):
 
-    softmax = torch.nn.Softmax()
-    result = softmax( torch.autograd.Variable(result) )
-
-    """
-    rows,_ = result.size()
-    print(rows)
-
-    top5_p, top5_i = torch.topk(result.data, 5)
-    for i in range(rows):
-        print("*********")
-        r = top5_i[i].tolist()
-        for ix in r:
-            prob = result.data.numpy()[i, ix]
-#            im = eval_loader.dataset.images[ix]
-#            fname = im.filepath
-            print(ix, prob)
-    return
-
-    print(top5)
-
-    return
-    """
-
     imlist = eval_loader.dataset.images
-    result_np = result.data.numpy()
+    result_np = result.numpy()
     rows,_ = result_np.shape
     assert(len(imlist) == rows)
 
@@ -155,9 +133,35 @@ def save_evaluation_results(evaluate_output_path, eval_loader, result):
         print("image_name,Type_1,Type_2,Type_3", file=fp)
         for i in range(rows):
             a1,a2,a3 = result_np[i]
-            p = os.path.basename(imlist[i].filepath)
+            p = os.path.basename(imlist[i].origpath)
             print( "%s,%.10f,%.10f,%.10f" % ( p,  a1, a2, a3) , file=fp)
 
+def load_clusters():
+    root_dir = '/home/fedor/src/kaggle/cervix/'
+
+    df1 = pd.read_csv(root_dir + "type1.csv", header=None, names=['filename', 'cluster'])
+    df1['type'] = 0
+
+    df2 = pd.read_csv(root_dir + "type2.csv", header=None, names=['filename', 'cluster'])
+    df2['type'] = 1
+
+    df3 = pd.read_csv(root_dir + "type3.csv", header=None, names=['filename', 'cluster'])
+    df3['type'] = 2
+
+    df = pd.concat([df1,df2,df3]  )
+    df = df.sort_values(by='filename')
+
+    res = []
+    for row in df.itertuples():
+        res.append( (row.filename, row.type*30 + row.cluster) )
+
+    return res
+
+def adjust_learning_rate(lr0, optimizer, epoch):
+    """Sets the learning rate to the initial LR decayed by 10 every 30 epochs"""
+    lr = lr0 * (0.1 ** (epoch // 30))
+    for param_group in optimizer.param_groups:
+        param_group['lr'] = lr
 
 def run(options):
     work_dir = os.path.join(options.work_dir, "classifier")
@@ -167,8 +171,9 @@ def run(options):
     np.random.seed(options.random_seed)
     print(" + Classes: %d" % NUM_CLASSES)
 
-    #model = CervixClassificationModel(num_classes = NUM_CLASSES, batch_norm=True)
-    model = torchvision.models.resnet18(num_classes = NUM_CLASSES)
+    model = CervixClassificationModel(num_classes = NUM_CLASSES, batch_norm=True)
+#    model = torchvision.models.inception_v3(num_classes = NUM_CLASSES, aux_logits=False)
+#    model =  torchvision.models.vgg16_bn(num_classes = NUM_CLASSES)
     criterion = torch.nn.CrossEntropyLoss()
     is_cuda = not options.no_cuda and torch.cuda.is_available()
     print(" + CUDA enabled" if is_cuda else " - CUDA disabled")
@@ -177,39 +182,53 @@ def run(options):
         model =  torch.nn.DataParallel( model ).cuda()
         criterion = criterion.cuda()
 
-    optimizer = torch.optim.Adadelta(model.parameters(), weight_decay=1e-3)
+#    optimizer = torch.optim.Adagrad(model.parameters(),lr=options.lr, weight_decay=5e-2)
+    optimizer = torch.optim.SGD(model.parameters(), lr=options.lr, momentum=0.9, weight_decay=0.03)
 
     if os.path.isfile(options.model_path):
         print( " + Loading model: %s" % options.model_path)
         model_state_dict = torch.load(options.model_path)
         model.load_state_dict(model_state_dict)
 
+
     print(" + Mini-batch size: %d" % options.batch_size)
     if options.train_epochs and options.train_input_path:
         print(" + Training epochs          : %d" % options.train_epochs)
         print(" +          input file      : %s" % options.train_input_path)
         validation_split =  options.validation_split if options.validation_split > 0 and options.validation_split < 1 else None
-        if validation_split:
-            print(" +          validation split: %.2f" % validation_split)
 
         train_loader, validate_loader = dataset.create_data_loader(
             annotations_path = options.train_input_path,
-            transform = transforms.Compose (epochs_transform),
             batch_size = options.batch_size,
             num_workers = options.workers,
             validation_split = validation_split,
-            is_train = True
+            is_train = True,
+            type_map = TYPE_MAP,
+            rseed = options.random_seed
         )
 
-        for epoch in range(0, options.train_epochs):
-            # train on single epoch
-            train_loss = train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda)
-            loss_str = "%d: train_loss: %.6f" % (epoch, train_loss)
-            if validation_split:
-                val_output, val_targets = evaluate_avg(model, validate_loader, is_cuda,10)
-                val_loss = validation_loss(criterion, val_output, val_targets)
-                loss_str += ", val_loss: %.6f" % val_loss
-            print(loss_str)
+        if validation_split:
+            print(" +          validation split: %.2f" % validation_split)
+
+        print(" +          training samples: %.d" % len(train_loader.sampler) )
+        if validation_split:
+            print(" +          validate samples: %.d" % len(validate_loader.sampler) )
+        with open(os.path.join(work_dir, "run.log"), 'w') as fp:
+            for epoch in range(0, options.train_epochs):
+                adjust_learning_rate(options.lr, optimizer, epoch)
+                # train on single epoch
+                train_loss = train_single_epoch(model, criterion, optimizer, train_loader, epoch, is_cuda)
+                loss_str = "%d: train_loss: %.6f" % (epoch, train_loss)
+                if validation_split and epoch % 5 == 0:
+                    val_output, val_targets = evaluate_avg(model, validate_loader, is_cuda, 5)
+                    val_loss = validation_loss(criterion, val_output, val_targets)
+                    acc_val = accuracy(val_output, val_targets)
+                    loss_str += ", val_loss: %.6f" % val_loss
+                    loss_str += ", accuracy: %.1f" % (acc_val * 100)
+                print(loss_str)
+                    #print_worst(epoch, 500, val_images, val_output, val_targets, fp)
+                    #fp.flush()
+
 
         print(" + Training completed")
         if not options.dry_run:
@@ -220,14 +239,14 @@ def run(options):
         print(" + Evaluating input file: %s" % options.evaluate_input_path)
         eval_loader,_ = dataset.create_data_loader(
             annotations_path = options.evaluate_input_path,
-            transform = transforms.Compose (epochs_transform),
             num_workers = options.workers,
             batch_size = options.batch_size,
             validation_split = None,
-            is_train = False
+            is_train = False,
+            type_map = TYPE_MAP
         )
 
-        output, targets = evaluate_avg(model, eval_loader, is_cuda, 1)
+        output, targets = evaluate_avg(model, eval_loader, is_cuda, 5)
         if targets.size():
             eval_loss = validation_loss(criterion, output, targets)
             print(" + eval_loss: %.6f" % eval_loss)
@@ -235,7 +254,9 @@ def run(options):
         # Save results
         if options.evaluate_output_path:
             print(" + Exporting results to: %s" % options.evaluate_output_path)
-            save_evaluation_results(options.evaluate_output_path, eval_loader, output)
+            softmax = torch.nn.Softmax()
+            output = softmax(torch.autograd.Variable( output)).data
+            save_evaluation_results(options.evaluate_output_path, eval_loader, output )
 
     print(" + DONE")
 
@@ -262,6 +283,9 @@ def main():
 
     parser.add_argument('--validation-split', default=0.8, type=float, dest="validation_split",
                         help='Train/Validation split')
+
+    parser.add_argument('--lr', default=0.01, type=float, dest="lr",
+                        help='Learning rate')
 
     parser.add_argument("--eval-input", dest="evaluate_input_path",
                         help="Path to sloth annotations file with data to evaluate", required=False)

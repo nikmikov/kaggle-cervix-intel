@@ -33,9 +33,10 @@ class CervixLocalisationDataset(torch.utils.data.Dataset):
             image = self.transform(image)
 
         if self.is_train:
-            return image, torch.FloatTensor( ( im.xmin, im.ymin, im.xmax, im.ymax ))
+            w = max ( im.xmax - im.xmin, im.ymax - im.ymin )
+            return image, torch.FloatTensor( ( im.xmin, im.ymin, w ))
         else:
-            return image,   torch.zeros(4,1) #if not self.is_train else None
+            return image,   torch.zeros(3,1) #if not self.is_train else None
 
     def __len__(self):
         return len(self.images)
